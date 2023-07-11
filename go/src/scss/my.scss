@@ -1,9 +1,32 @@
 // 공통
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
 
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    position: absolute !important;
+    bottom: 10% !important;
+    left: 30% !important;
+    width: 100%;
+    }
+
+.swiper-pagination-bullet{
+    background-color: #FFFFFF !important;
+    opacity: 0.8 !important;
+    box-shadow: 0 1 1px black;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #F1605F !important;
+    opacity: 1 !important;
+}
+
+
 *{
     padding: 0;
     margin: 0;
+}
+
+.newcontainer{
+    width: 1440px !important;
 }
 
 body{
@@ -65,40 +88,45 @@ a:hover{
 
 // 상단
 
-.on #tab{
+.on #wrap{
     margin-top: 0 !important;
     background-color: white;
 }
 
-.on .ad-title{
+.on #ad-title{
     height: 0;
-    overflow: hidden;
+}
+
+#ad-title{
+    background-color: #F9F6ED;
+    padding: 12px 0;
+    text-align: center;
 }
 
 #wrap{
-    .ad-title{
-        background-color: #F9F6ED;
-        padding: 12px 0;
-        text-align: center;
-        transition: 0.4s;
-    }
+    margin-top: 48px;
+    background-color: white;
     #tab{
-        margin-top: 48px;
-        padding: 15px 0;
-        transition: 0.3s;
+        
         h1{
             img{
                 width: 170px;
             }
         }
-        #gnb li{
+        #gnb{
+            margin-bottom: 0;
+        
+        li{
             position: relative;
-            padding: 20px 50px;
+            padding: 40px 50px;
+            
             a{
                 font-size: 16pt;   
             }
         }
+        }
     }
+
 
 }
 
@@ -107,16 +135,183 @@ a:hover{
     background-color: white;
 }
 
+
 #banner{
+    position: relative;
     img{
-        margin-top: 118px;
+        margin-top: 112px;
+        width: inherit
+    }
+    .textbox{
+        font-family: "Gowun Batang";
+        position: absolute;
+        top: 50%;
+        right: 50px;
+        color: white;
+        h3{
+            font-size: 45pt;
+            letter-spacing: -5px;
+            padding-bottom: 10px;
+            .coloring{
+                display: inline-block;
+                background-color: #F1605F;
+                padding: 0 10px;
+                height: 80px;
+
+            }
+        }
+        p{
+            text-align: right;
+            font-size: 20pt;
+            letter-spacing: -2px;
+        }
     }
 }
+
+#eve{
+    
+    #ulbox{
+        width: 1440px;
+        height: 600px;
+        .swiper-slide{
+            display: flex;
+            margin-right: 0 !important;
+        }
+        img{
+            width: auto;
+        }
+        .e_bg1{
+            position: relative;
+            width: 1440px;
+            height: 600px;
+            background-image: url("../asset/eventbg1.jpg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            img{
+                position: absolute;
+                right: 0;
+            }
+            ul{
+                color: white;
+                .event-box{
+                    margin-top: -40px;
+                    letter-spacing: -1px;
+                    font-weight: 300;
+                    font-size: 16pt;
+                    position: absolute;
+                    top: 50%; 
+                    left: 4%;    
+                    transform: translateY(-50%);
+                    .title{
+                        display: inline-block;
+                        letter-spacing: -2px;
+                        font-family: "Gowun Batang",serif;
+                        font-size: 25pt;
+                        padding: 20px 0;
+                    }
+                    .spot{
+                        letter-spacing: -2px;
+                        font-family: "Gowun Batang",serif;
+                        font-size: 35pt;
+                    }
+                    div{
+                        margin-top: 4px;
+                    }
+                }
+            }
+        }
+        .e_bg2{
+            position: relative;
+            width: 1440px;
+            height: 600px;
+            background-image: url("../asset/eventbg2.jpg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            img{
+                position: absolute;
+                right: 0;
+            }
+            ul{
+                color: white;
+                .event-box{
+                    margin-top: -40px;
+                    letter-spacing: -1px;
+                    font-weight: 300;
+                    font-size: 16pt;
+                    position: absolute;
+                    top: 50%; 
+                    left: 4%;    
+                    transform: translateY(-50%);
+                    .title{
+                        display: inline-block;
+                        letter-spacing: -2px;
+                        font-family: "Gowun Batang",serif;
+                        font-size: 25pt;
+                        padding: 20px 0;
+                    }
+                    .spot{
+                        letter-spacing: -2px;
+                        font-family: "Gowun Batang",serif;
+                        font-size: 35pt;
+                    }
+                    div{
+                        margin-top: 4px;
+                    }
+                }
+            }
+        }
+        .e_bg3{
+            
+            position: relative;
+            width: 1440px;
+            height: 600px;
+            background-image: url("../asset/eventbg3.jpg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            img{
+                position: absolute;
+                right: 0;
+            }
+            ul{
+                color: white;
+                .event-box{
+                    margin-top: -40px;
+                    letter-spacing: -1px;
+                    font-weight: 300;
+                    font-size: 16pt;
+                    position: absolute;
+                    top: 50%; 
+                    left: 4%;    
+                    transform: translateY(-50%);
+                    
+                    .title{
+                        display: inline-block;
+                        letter-spacing: -2px;
+                        font-family: "Gowun Batang",serif;
+                        font-size: 25pt;
+                        padding: 20px 0;
+                        
+                    }
+                    .spot{
+                        letter-spacing: -2px;
+                        font-family: "Gowun Batang",serif;
+                        font-size: 35pt;
+                    }
+                    div{
+                        margin-top: 4px;
+                    }
+                }
+            }
+        }
+    }
+ 
+}
+
 
 #ft{
     background-color: #3C3C3C;
     height: 130px;
-    #wrap{
+    #f-wrap{
         height: inherit;
     }
     #fnb{

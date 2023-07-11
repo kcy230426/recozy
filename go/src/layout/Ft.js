@@ -17,7 +17,7 @@ const Ft = () => {
     return(
         <>
         <footer id="ft">
-            <div id="wrap" className='container d-flex justify-content-between align-items-center'> 
+            <div id="f-wrap" className='container d-flex justify-content-between align-items-center'> 
             <h3><img src={f_logo} alt="하단 로고" /></h3>
             <ul id="fnb">
                 <div className='d-flex'>

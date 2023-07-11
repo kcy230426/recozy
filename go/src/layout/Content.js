@@ -7,6 +7,7 @@ const Content = () => {
 return(
     <>
     <Banner/>
+    <Event/>
     <div className='box'></div>
     </>
 )

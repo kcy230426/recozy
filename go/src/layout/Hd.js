@@ -46,9 +46,9 @@ const Hd = () => {
   return (
     <div>
        <ScrollSpyExample />
-      <header id="wrap">
-        <div className="ad-title">사전예약 신청시 추첨을 통해 사이드메뉴 무료교환권을 드립니다.</div>
-        <div id="tab" className="container d-flex justify-content-between align-items-center fixed-top">
+      <div id="ad-title">사전예약 신청시 추첨을 통해 사이드메뉴 무료교환권을 드립니다.</div>
+      <header id="wrap" className='fixed-top'>
+        <div id="tab" className="container d-flex justify-content-between align-items-center">
           <h1>
             <a href="#none">
               <img src={logo} alt="로고" />
