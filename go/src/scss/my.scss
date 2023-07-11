@@ -1,0 +1,139 @@
+// 공통
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Noto Sans KR";
+    letter-spacing: -0.8px;
+}
+
+ul,li,dl,dt{
+    list-style-type: none;
+}
+
+a{
+    color: #222;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+#gnb li:hover a{
+    color: #F1605F;
+}
+
+#gnb li:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%; /* 시작점을 가운데로 설정합니다. */
+    background-color: #F1605F;
+    width: 0;
+    height: 5px;
+    transition: 0.3s;
+    animation-name: expand;
+    animation-direction: alternate; /* 애니메이션의 방향을 번갈아가며 재생합니다. */
+    animation-fill-mode: forwards; /* 애니메이션 종료 후 상태를 유지합니다. */
+}
+
+
+#gnb li.active::before{
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    background-color: #F1605F;
+    width: 100%;
+    height: 5px;
+}
+
+
+@keyframes expand {
+    from {
+        transform: translateX(-50%) scaleX(0); /* 시작 상태: 가운데 정렬 및 가로 길이 0 */
+    }
+    to {
+        transform: translateX(-50%) scaleX(1); /* 종료 상태: 가운데 정렬 및 가로 길이 1 (100%) */
+    }
+}
+
+// 상단
+
+.on #tab{
+    margin-top: 0 !important;
+    background-color: white;
+}
+
+.on .ad-title{
+    height: 0;
+    overflow: hidden;
+}
+
+#wrap{
+    .ad-title{
+        background-color: #F9F6ED;
+        padding: 12px 0;
+        text-align: center;
+        transition: 0.4s;
+    }
+    #tab{
+        margin-top: 48px;
+        padding: 15px 0;
+        transition: 0.3s;
+        h1{
+            img{
+                width: 170px;
+            }
+        }
+        #gnb li{
+            position: relative;
+            padding: 20px 50px;
+            a{
+                font-size: 16pt;   
+            }
+        }
+    }
+
+}
+
+.box{
+    height: 2000px;
+    background-color: white;
+}
+
+#banner{
+    img{
+        margin-top: 118px;
+    }
+}
+
+#ft{
+    background-color: #3C3C3C;
+    height: 130px;
+    #wrap{
+        height: inherit;
+    }
+    #fnb{
+        li{
+            padding: 8px 20px;
+            a{
+                color: white;
+                font-size: 9.8pt;
+                font-weight: 300;
+            }
+        }
+        .copyright{
+            padding-top: 0;
+            padding-bottom: 0;
+            color: white;
+            font-size: 9.8pt;
+            font-weight: 300;
+        }
+    }
+}
