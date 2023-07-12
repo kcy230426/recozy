@@ -26,7 +26,7 @@
 }
 
 .newcontainer{
-    width: 1440px !important;
+    max-width: 1440px !important;
 }
 
 body{
@@ -38,6 +38,10 @@ ul,li,dl,dt{
     list-style-type: none;
 }
 
+.px-50{
+    padding: 0 50px;
+}
+
 a{
     color: #222;
     text-decoration: none;
@@ -46,6 +50,63 @@ a{
 a:hover{
     text-decoration: none;
 }
+
+
+
+@media(max-width:991px) {
+    #gnb{
+        position: absolute;
+        top:100%;
+        left:0; right:0;
+        height:0;
+        overflow: hidden;
+        background-color: white;
+    }
+
+    #listbtn.open + #gnb{
+        height:450px;
+        
+    }
+
+    
+    #tab h1{
+        padding: 30px 0;
+    }
+    .textbox h3{
+        font-size: 26pt !important;
+        letter-spacing: -3px !important;
+    }
+    .textbox h3 span{
+        height: 44px !important;
+    }
+    .textbox p{
+        font-size: 13pt !important;
+        letter-spacing: -2.5px;
+        margin-top: -10px;
+    }
+    .textbox{
+        margin-top: 30px;
+        margin-right: -20px;
+    }
+
+    .event-box{
+        margin-top: -40px;
+        letter-spacing: -1px;
+        font-weight: 300;
+        font-size: 10pt !important;
+        position: absolute;
+        top: 50%; 
+        left: 4%;    
+        transform: translateY(-50%);}
+}
+
+@media (min-width:1001px) {
+    #listbtn{
+        display: none;
+    }
+}
+
+
 
 #gnb li:hover a{
     color: #F1605F;
@@ -74,6 +135,7 @@ a:hover{
     background-color: #F1605F;
     width: 100%;
     height: 5px;
+    
 }
 
 
@@ -106,7 +168,20 @@ a:hover{
 #wrap{
     margin-top: 48px;
     background-color: white;
+    
     #tab{
+
+        #listbtn{
+            background-color: transparent;
+            border: 0;
+            position: absolute;
+            font-size: 35pt;
+            top: 50%;
+            padding-left: 10px;
+            transform: translateY(-50%)
+            
+
+        }
         
         h1{
             img{
@@ -115,15 +190,34 @@ a:hover{
         }
         #gnb{
             margin-bottom: 0;
+            
         
         li{
             position: relative;
-            padding: 40px 50px;
+            padding:40px 50px;
+         
             
             a{
                 font-size: 16pt;   
             }
+            @media (max-width:768px) {
+                a{
+                    font-size: 14pt;   
+                }
+            }
         }
+        }
+        #clickgnb {
+            position: absolute;
+            border-radius: 0 0 30px 30px;
+            background-color: rgba(255, 106, 106, 0.753);
+            li{
+                padding: 24px 30px;
+
+                a{
+                    font-size: 16pt;
+                }
+            }
         }
     }
 
@@ -171,137 +265,74 @@ a:hover{
 #eve{
     
     #ulbox{
-        width: 1440px;
-        height: 600px;
+        max-width: 1440px;       
         .swiper-slide{
             display: flex;
             margin-right: 0 !important;
+            [class^='e_bg']{
+                position: relative;  
+                height: 0;
+                padding-top: 42%;      
+                max-height: 600px;
+                background-repeat: no-repeat;
+                background-size:cover;
+                width:100%;
+                img{
+                    position: absolute;
+                    right: 0;
+                    top:0;
+                }
+                ul{
+                    color: white;
+                    .event-box{
+                        margin-top: -40px;
+                        letter-spacing: -1px;
+                        font-weight: 300;
+                        font-size: 16pt;
+                        position: absolute;
+                        top: 50%; 
+                        left: 4%;    
+                        transform: translateY(-50%);
+                        
+                        .title{
+                            display: inline-block;
+                            letter-spacing: -2px;
+                            font-family: "Gowun Batang",serif;
+                            font-size: 25pt;
+                            padding: 20px 0;
+                            
+                        }
+                        .spot{
+                            letter-spacing: -2px;
+                            font-family: "Gowun Batang",serif;
+                            font-size: 35pt;
+                        }
+                        div{
+                            margin-top: 4px;
+                        }
+                    }
+                }
+            }
         }
         img{
             width: auto;
         }
         .e_bg1{
-            position: relative;
-            width: 1440px;
-            height: 600px;
-            background-image: url("../asset/eventbg1.jpg");
-            background-repeat: no-repeat;
-            background-size: contain;
-            img{
-                position: absolute;
-                right: 0;
-            }
-            ul{
-                color: white;
-                .event-box{
-                    margin-top: -40px;
-                    letter-spacing: -1px;
-                    font-weight: 300;
-                    font-size: 16pt;
-                    position: absolute;
-                    top: 50%; 
-                    left: 4%;    
-                    transform: translateY(-50%);
-                    .title{
-                        display: inline-block;
-                        letter-spacing: -2px;
-                        font-family: "Gowun Batang",serif;
-                        font-size: 25pt;
-                        padding: 20px 0;
-                    }
-                    .spot{
-                        letter-spacing: -2px;
-                        font-family: "Gowun Batang",serif;
-                        font-size: 35pt;
-                    }
-                    div{
-                        margin-top: 4px;
-                    }
-                }
-            }
+           
+            background-image: url("../asset/eventbg1.jpg"); 
         }
         .e_bg2{
-            position: relative;
-            width: 1440px;
-            height: 600px;
-            background-image: url("../asset/eventbg2.jpg");
-            background-repeat: no-repeat;
-            background-size: contain;
-            img{
-                position: absolute;
-                right: 0;
-            }
-            ul{
-                color: white;
-                .event-box{
-                    margin-top: -40px;
-                    letter-spacing: -1px;
-                    font-weight: 300;
-                    font-size: 16pt;
-                    position: absolute;
-                    top: 50%; 
-                    left: 4%;    
-                    transform: translateY(-50%);
-                    .title{
-                        display: inline-block;
-                        letter-spacing: -2px;
-                        font-family: "Gowun Batang",serif;
-                        font-size: 25pt;
-                        padding: 20px 0;
-                    }
-                    .spot{
-                        letter-spacing: -2px;
-                        font-family: "Gowun Batang",serif;
-                        font-size: 35pt;
-                    }
-                    div{
-                        margin-top: 4px;
-                    }
-                }
-            }
+          
+            background-image: url("../asset/eventbg2.jpg");          
+         
         }
         .e_bg3{
             
-            position: relative;
-            width: 1440px;
-            height: 600px;
+          
             background-image: url("../asset/eventbg3.jpg");
-            background-repeat: no-repeat;
-            background-size: contain;
-            img{
-                position: absolute;
-                right: 0;
-            }
-            ul{
-                color: white;
-                .event-box{
-                    margin-top: -40px;
-                    letter-spacing: -1px;
-                    font-weight: 300;
-                    font-size: 16pt;
-                    position: absolute;
-                    top: 50%; 
-                    left: 4%;    
-                    transform: translateY(-50%);
-                    
-                    .title{
-                        display: inline-block;
-                        letter-spacing: -2px;
-                        font-family: "Gowun Batang",serif;
-                        font-size: 25pt;
-                        padding: 20px 0;
-                        
-                    }
-                    .spot{
-                        letter-spacing: -2px;
-                        font-family: "Gowun Batang",serif;
-                        font-size: 35pt;
-                    }
-                    div{
-                        margin-top: 4px;
-                    }
-                }
-            }
+           
+          
+            
         }
     }
  

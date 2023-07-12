@@ -51,7 +51,7 @@ const Event = () => {
 
     return(
         <>
-        <section id="eve" className="d-flex justify-content-center">
+        <section id="eve" className="container-md">
                     <Swiper
                     id="ulbox"
                     spaceBetween={0}
@@ -65,7 +65,7 @@ const Event = () => {
                     >
                         <SwiperSlide>
                             <div className="e_bg1">
-                                <img src={in_img1} alt="슬라이드 이미지1" />
+                                <img src={in_img1} alt="슬라이드 이미지1" className='img-fluid' />
                                 <ul>
                                     {
                                         eventdb.first.map((v)=>{
@@ -87,7 +87,7 @@ const Event = () => {
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="e_bg2">
-                                <img src={in_img2} alt="슬라이드 이미지2" />
+                                <img src={in_img2} alt="슬라이드 이미지2" className='img-fluid' />
                                 <ul>
                                     {
                                         eventdb.second.map((v)=>{
@@ -109,7 +109,7 @@ const Event = () => {
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="e_bg3">
-                                <img src={in_img3} alt="슬라이드 이미지3" />
+                                <img src={in_img3} alt="슬라이드 이미지3" className='img-fluid' />
                                 <ul>
                                     {
                                         eventdb.third.map((v)=>{
