@@ -58,13 +58,13 @@ const Hd = () => {
       <header id="wrap" className='fixed-top '>
         <div id="tab" className="container-md d-lg-flex justify-content-between align-items-center position-relative">
           
-          <h1 id="logobox" className='text-center flex-grow-1 text-md-start'>
+          <h1 id="logobox" className='text-center flex-grow-1 text-lg-start'>
             <a href="#none">
               <img src={logo} alt="로고" />
             </a>
           </h1>
           <button id='listbtn' onClick={ () => { setOpen(!openmobile) } } className={ openmobile ? "open" : ""} ><i class="bi bi-list"></i></button>
-          <ul id="gnb" className={`d-md-flex justify-content-center `}>
+          <ul id="gnb" className={`d-flex justify-content-center `}>
             {nav.gnb.map((x, i) => (
               <li
                 key={i}

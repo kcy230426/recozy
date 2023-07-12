@@ -55,16 +55,26 @@ a:hover{
 
 @media(max-width:991px) {
     #gnb{
+        width: 100% !important;
         position: absolute;
         top:100%;
         left:0; right:0;
         height:0;
         overflow: hidden;
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.788);
+        animation-duration: 0.2s;
+        padding: 0 !important;
+        transition: 0.2s;
+    }
+
+    #gnb li{
+        padding: 30px 20px !important;
+        
     }
 
     #listbtn.open + #gnb{
-        height:450px;
+        height:auto !important;
+        border-radius: 0 0 100px 100px;
         
     }
 
@@ -90,19 +100,175 @@ a:hover{
     }
 
     .event-box{
-        margin-top: -40px;
-        letter-spacing: -1px;
+        margin-top: -10px !important;
+        letter-spacing: -1px !important;
         font-weight: 300;
-        font-size: 10pt !important;
+        font-size: 7pt !important;
         position: absolute;
         top: 50%; 
         left: 4%;    
         transform: translateY(-50%);}
+
+    .event-box .title{
+        font-size: 12pt !important;
+        letter-spacing: -1px !important;
+    }
+
+    .event-box .spot{
+        font-size: 25pt !important;
+    }
+
+    .swiper{
+        width: auto !important;
+        height: 680px !important;
+    }
+
+    .swiper ul{
+        width: 100%;
+        padding:0 !important;
+        display:flex !important;
+        justify-content:center !important; 
+    }
+    .event-box{
+        
+        // justify-content: center !important;
+        // width: 100% !important;
+        position:unset !important;
+        margin-top: 40px !important;
+        transform:none !important;
+    }
+
+    .event-box .title{
+        font-size:17pt !important;
+    }
+
+    .event-box .spot{
+        font-size:26pt !important;
+    }
+
+    .event-box div{
+        font-size:11pt !important;
+        letter-spacing:-1.2px !important;
+    }
+
+    .e_bg1{
+        padding: 0 !important;
+        height: 100% !important;
+        max-height: 100% !important;
+        background-size: cover !important;
+        background-image: url("../asset/s_e_bg1.jpg") !important;
+        position: relative !important;
+    }
+
+    .e_bg1 img{
+        content: url("../asset/sm_img1.png") !important;
+        width: 100%;
+        position: absolute !important;
+        top: 100% !important;
+        transform: translateY(-100%);
+    }
+    .e_bg2{
+        height: 100% !important;
+        background-size: contain;
+        background-image: url("../asset/s_e_bg2.jpg") !important;
+    }
+    .e_bg3{
+        height: 100% !important;
+        background-size: contain;
+        background-image: url("../asset/s_e_bg3.jpg") !important;
+    }
 }
+
+
 
 @media (min-width:1001px) {
     #listbtn{
         display: none;
+    }
+    [class^='e_bg'] img{
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top:0;}
+}
+
+@media(min-width:768px){
+
+    #eve{
+    
+        #ulbox{
+            max-width: 1440px !important;       
+            .swiper-slide{
+                display: flex !important;
+                margin-right: 0 !important;
+                [class^='e_bg']{
+                    position: relative !important;  
+                    height: 0 !important;
+                    padding-top: 42% !important;      
+                    max-height: 600px !important;
+                    background-repeat: no-repeat !important;
+                    background-size:cover !important;
+                    width:100% !important;
+                    img{
+                        position: absolute !important;
+                        right: 0 !important;
+                        top: 0!important;
+                    }
+                    ul{
+                        color: white !important;
+                        .event-box{
+                            margin-top: -40px!important;
+                            letter-spacing: -1px!important;
+                            font-weight: 300!important;
+                            font-size: 16pt!important;
+                            position: absolute!important;
+                            top: 50%!important; 
+                            left: 4%!important;    
+                            transform: translateY(-50%)!important;
+                            
+                            .title{
+                                display: inline-block!important;
+                                letter-spacing: -2px!important;
+                                font-family: "Gowun Batang",serif!important;
+                                font-size: 25pt!important;
+                                padding: 20px 0!important;
+                                
+                            }
+                            .spot{
+                                letter-spacing: -2px!important;
+                                font-family: "Gowun Batang",serif!important;
+                                font-size: 35pt!important;
+                            }
+                            div{
+                                margin-top: 4px!important;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            img{
+                width: auto;
+            }
+            .e_bg1{
+               
+                background-image: url("../asset/eventbg1.jpg")!important; 
+            }
+            .e_bg2{
+              
+                background-image: url("../asset/eventbg2.jpg")!important;          
+             
+            }
+            .e_bg3{
+                
+              
+                background-image: url("../asset/eventbg3.jpg") !important;
+               
+              
+                
+            }
+        }
+     
     }
 }
 
