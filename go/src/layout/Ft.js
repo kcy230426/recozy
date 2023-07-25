@@ -1,4 +1,7 @@
 import f_logo from './../asset/f_logo.svg'
+import symbol from './../asset/symbol.svg'
+import kakao from './../asset/kakao.png'
+import instar from './../asset/instar.png'
 
 const Ft = () => {
 
@@ -41,6 +44,13 @@ const Ft = () => {
                 }
             </ul>
             </div>
+                <div id="quick">
+                    <ul>
+                        <li id='btn1'><a href='https://github.com/kcy230426' target='_blank'><img className='symbol' src={symbol} alt="포트폴리오 메뉴" /></a></li>
+                        <li id='btn2'><a href='https://www.kakaocorp.com/page/service/service/KakaoTalk' target='_blank'><img className='kakao' src={kakao} alt="카카오톡 메뉴" /></a></li>
+                        <li id='btn3'><a href='https://www.instagram.com/' target='_blank'><img className='instar' src={instar} alt="인스타그램 메뉴" /></a></li>
+                    </ul>
+                </div>
         </footer>
         </>
     )

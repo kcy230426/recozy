@@ -4,7 +4,7 @@ const Banner = () => {
 
     return(
         <>
-        <section className='container-md'>
+        <section className='container-md p-0 mb-0'>
             <div id="banner">
                 <img src={bg} alt="메인 배경" className='img-fluid' />
                 <div className="textbox">

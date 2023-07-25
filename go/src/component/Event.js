@@ -51,16 +51,16 @@ const Event = () => {
 
     return(
         <>
-        <section id="eve" className="container-md">
+        <section id="eve" className="container-md mb-0">
                     <Swiper
                     id="ulbox"
                     spaceBetween={0}
                     slidesPerView={1}
                     pagination={{ clickable: true }}
-                    // autoplay={{
-                    //     delay: 5000,
-                    //     disableOnInteraction: false,
-                    //   }}
+                    autoplay={{
+                        delay: 5000,
+                        disableOnInteraction: false,
+                      }}
                     modules={[Autoplay, Pagination]}
                     >
                         <SwiperSlide>

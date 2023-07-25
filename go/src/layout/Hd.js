@@ -9,12 +9,12 @@ const Hd = () => {
   const nav = {
     gnb: [
       { name: '이벤트', cls: 'li-event', href: '#eve' },
-      { name: '사전예약 신청', cls: 'li-res', href: '#reservation' },
+      { name: '사전예약 신청', cls: 'li-res', href: '#form-all' },
       { name: '오시는 길', cls: 'li-way', href: '#way' }
     ],
     c_gnb:[
       { name: '이벤트', cls: 'li-event', href: '#eve' },
-      { name: '사전예약 신청', cls: 'li-res', href: '#reservation' },
+      { name: '사전예약 신청', cls: 'li-res', href: '#form-all' },
       { name: '오시는 길', cls: 'li-way', href: '#way' }
     ]
   };
@@ -59,7 +59,7 @@ const Hd = () => {
         <div id="tab" className="container-md d-lg-flex justify-content-between align-items-center position-relative">
           
           <h1 id="logobox" className='text-center flex-grow-1 text-lg-start'>
-            <a href="#none">
+            <a href="#banner">
               <img src={logo} alt="로고" />
             </a>
           </h1>

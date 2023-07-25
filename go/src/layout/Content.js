@@ -8,7 +8,8 @@ return(
     <>
     <Banner/>
     <Event/>
-    <div className='box'></div>
+    <Form/>
+    <Way/>
     </>
 )
 }

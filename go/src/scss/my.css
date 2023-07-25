@@ -1,8 +1,31 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Noto+Sans+KR:wght@300;400;500&display=swap");
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+  position: absolute !important;
+  bottom: 10% !important;
+  left: 30% !important;
+  width: 100%;
+}
+
+.swiper-pagination-bullet {
+  background-color: #FFFFFF !important;
+  opacity: 0.8 !important;
+  box-shadow: 0 1 1px black;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #F1605F !important;
+  opacity: 1 !important;
+}
+
 * {
   padding: 0;
   margin: 0;
+}
+
+.newcontainer {
+  max-width: 1440px !important;
 }
 
 body {
@@ -14,6 +37,10 @@ ul, li, dl, dt {
   list-style-type: none;
 }
 
+.px-50 {
+  padding: 0 50px;
+}
+
 a {
   color: #222;
   text-decoration: none;
@@ -23,6 +50,192 @@ a:hover {
   text-decoration: none;
 }
 
+#wrap {
+  box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.349);
+}
+
+@media (max-width: 991px) {
+  #gnb {
+    width: 100% !important;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 0;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.788);
+    animation-duration: 0.2s;
+    padding: 0 !important;
+    transition: 0.2s;
+  }
+  #gnb li {
+    padding: 30px 20px !important;
+  }
+  #listbtn.open + #gnb {
+    height: auto !important;
+    border-radius: 0 0 100px 100px;
+  }
+  #tab h1 {
+    padding: 30px 0;
+  }
+  .textbox h3 {
+    font-size: 26pt !important;
+    letter-spacing: -3px !important;
+  }
+  .textbox h3 span {
+    height: 44px !important;
+  }
+  .textbox p {
+    font-size: 13pt !important;
+    letter-spacing: -2.5px;
+    margin-top: -10px;
+  }
+  .textbox {
+    margin-top: 30px;
+    margin-right: -20px;
+  }
+  .event-box {
+    margin-top: -10px !important;
+    letter-spacing: -1px !important;
+    font-weight: 300;
+    font-size: 7pt !important;
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    transform: translateY(-50%);
+  }
+  .event-box .title {
+    font-size: 12pt !important;
+    letter-spacing: -1px !important;
+  }
+  .event-box .spot {
+    font-size: 25pt !important;
+  }
+  .swiper {
+    width: auto !important;
+    height: 680px !important;
+  }
+  .swiper ul {
+    width: 100%;
+    padding: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .event-box {
+    position: unset !important;
+    margin-top: 40px !important;
+    transform: none !important;
+  }
+  .event-box .title {
+    font-size: 17pt !important;
+  }
+  .event-box .spot {
+    font-size: 26pt !important;
+  }
+  .event-box div {
+    font-size: 11pt !important;
+    letter-spacing: -1.2px !important;
+  }
+  .e_bg1 {
+    padding: 0 !important;
+    height: 100% !important;
+    max-height: 100% !important;
+    background-size: cover !important;
+    background-image: url("../asset/s_e_bg1.jpg") !important;
+    position: relative !important;
+  }
+  .e_bg1 img {
+    content: url("../asset/sm_img1.png") !important;
+    width: 100%;
+    position: absolute !important;
+    top: 100% !important;
+    transform: translateY(-100%);
+  }
+  .e_bg2 {
+    height: 100% !important;
+    background-size: contain;
+    background-image: url("../asset/s_e_bg2.jpg") !important;
+  }
+  .e_bg3 {
+    height: 100% !important;
+    background-size: contain;
+    background-image: url("../asset/s_e_bg3.jpg") !important;
+  }
+}
+@media (min-width: 1001px) {
+  #listbtn {
+    display: none;
+  }
+  [class^=e_bg] img {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+@media (min-width: 768px) {
+  #eve #ulbox {
+    max-width: 1440px !important;
+  }
+  #eve #ulbox .swiper-slide {
+    display: flex !important;
+    margin-right: 0 !important;
+  }
+  #eve #ulbox .swiper-slide [class^=e_bg] {
+    position: relative !important;
+    height: 0 !important;
+    padding-top: 42% !important;
+    max-height: 600px !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    width: 100% !important;
+  }
+  #eve #ulbox .swiper-slide [class^=e_bg] img {
+    position: absolute !important;
+    right: 0 !important;
+    top: 0 !important;
+  }
+  #eve #ulbox .swiper-slide [class^=e_bg] ul {
+    color: white !important;
+  }
+  #eve #ulbox .swiper-slide [class^=e_bg] ul .event-box {
+    margin-top: -40px !important;
+    letter-spacing: -1px !important;
+    font-weight: 300 !important;
+    font-size: 16pt !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 4% !important;
+    transform: translateY(-50%) !important;
+  }
+  #eve #ulbox .swiper-slide [class^=e_bg] ul .event-box .title {
+    display: inline-block !important;
+    letter-spacing: -2px !important;
+    font-family: "Gowun Batang", serif !important;
+    font-size: 25pt !important;
+    padding: 20px 0 !important;
+  }
+  #eve #ulbox .swiper-slide [class^=e_bg] ul .event-box .spot {
+    letter-spacing: -2px !important;
+    font-family: "Gowun Batang", serif !important;
+    font-size: 35pt !important;
+  }
+  #eve #ulbox .swiper-slide [class^=e_bg] ul .event-box div {
+    margin-top: 4px !important;
+  }
+  #eve #ulbox img {
+    width: auto;
+  }
+  #eve #ulbox .e_bg1 {
+    background-image: url("../asset/eventbg1.jpg") !important;
+  }
+  #eve #ulbox .e_bg2 {
+    background-image: url("../asset/eventbg2.jpg") !important;
+  }
+  #eve #ulbox .e_bg3 {
+    background-image: url("../asset/eventbg3.jpg") !important;
+  }
+}
 #gnb li:hover a {
   color: #F1605F;
 }
@@ -35,7 +248,7 @@ a:hover {
   background-color: #F1605F;
   width: 0;
   height: 5px;
-  transition: 0.2s;
+  transition: 0.3s;
   animation-name: expand;
   animation-direction: alternate; /* 애니메이션의 방향을 번갈아가며 재생합니다. */
   animation-fill-mode: forwards; /* 애니메이션 종료 후 상태를 유지합니다. */
@@ -59,35 +272,178 @@ a:hover {
     transform: translateX(-50%) scaleX(1); /* 종료 상태: 가운데 정렬 및 가로 길이 1 (100%) */
   }
 }
-#wrap .ad-title {
+.on #wrap {
+  margin-top: 0 !important;
+  background-color: white;
+}
+
+.on #ad-title {
+  height: 0;
+}
+
+#ad-title {
   background-color: #F9F6ED;
   padding: 12px 0;
   text-align: center;
 }
-#wrap #tab {
-  padding: 15px 0;
+
+#wrap {
+  margin-top: 48px;
+  background-color: white;
+}
+#wrap #tab #listbtn {
+  background-color: transparent;
+  border: 0;
+  position: absolute;
+  font-size: 35pt;
+  top: 50%;
+  padding-left: 10px;
+  transform: translateY(-50%);
 }
 #wrap #tab h1 img {
   width: 170px;
 }
+#wrap #tab #gnb {
+  margin-bottom: 0;
+}
 #wrap #tab #gnb li {
   position: relative;
-  padding: 20px 50px;
+  padding: 40px 50px;
+  transition: 0.2s;
 }
 #wrap #tab #gnb li a {
   font-size: 16pt;
 }
+@media (max-width: 768px) {
+  #wrap #tab #gnb li a {
+    font-size: 14pt;
+  }
+}
+#wrap #tab #clickgnb {
+  position: absolute;
+  border-radius: 0 0 30px 30px;
+  background-color: rgba(255, 106, 106, 0.753);
+}
+#wrap #tab #clickgnb li {
+  padding: 24px 30px;
+}
+#wrap #tab #clickgnb li a {
+  font-size: 16pt;
+}
 
-.box {
-  height: 2000px;
-  background-color: white;
+body.on #gnb li {
+  padding: 25px 50px !important;
+}
+
+body.on #banner {
+  margin-top: -30px !important;
+}
+
+#banner {
+  margin-top: 0;
+  transition: 0.2s;
+  position: relative;
+}
+#banner img {
+  margin-top: 112px;
+  width: inherit;
+  display: block;
+}
+#banner .textbox {
+  font-family: "Gowun Batang";
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  color: white;
+}
+#banner .textbox h3 {
+  font-size: 45pt;
+  letter-spacing: -5px;
+  padding-bottom: 10px;
+}
+#banner .textbox h3 .coloring {
+  display: inline-block;
+  background-color: #F1605F;
+  padding: 0 10px;
+  height: 80px;
+}
+#banner .textbox p {
+  text-align: right;
+  font-size: 20pt;
+  letter-spacing: -2px;
+}
+
+#eve {
+  padding: 0;
+}
+#eve #ulbox {
+  max-width: 1440px;
+}
+#eve #ulbox .swiper-slide {
+  display: flex;
+  margin-right: 0 !important;
+}
+#eve #ulbox .swiper-slide [class^=e_bg] {
+  position: relative;
+  height: 0;
+  padding-top: 42%;
+  max-height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+#eve #ulbox .swiper-slide [class^=e_bg] img {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#eve #ulbox .swiper-slide [class^=e_bg] ul {
+  color: white;
+}
+#eve #ulbox .swiper-slide [class^=e_bg] ul .event-box {
+  margin-top: -40px;
+  letter-spacing: -1px;
+  font-weight: 300;
+  font-size: 16pt;
+  position: absolute;
+  top: 50%;
+  left: 4%;
+  transform: translateY(-50%);
+}
+#eve #ulbox .swiper-slide [class^=e_bg] ul .event-box .title {
+  display: inline-block;
+  letter-spacing: -2px;
+  font-family: "Gowun Batang", serif;
+  font-size: 25pt;
+  padding: 20px 0;
+}
+#eve #ulbox .swiper-slide [class^=e_bg] ul .event-box .spot {
+  letter-spacing: -2px;
+  font-family: "Gowun Batang", serif;
+  font-size: 35pt;
+}
+#eve #ulbox .swiper-slide [class^=e_bg] ul .event-box div {
+  margin-top: 4px;
+}
+#eve #ulbox img {
+  width: auto;
+}
+#eve #ulbox .e_bg1 {
+  background-image: url("../asset/eventbg1.jpg");
+}
+#eve #ulbox .e_bg2 {
+  background-image: url("../asset/eventbg2.jpg");
+}
+#eve #ulbox .e_bg3 {
+  background-image: url("../asset/eventbg3.jpg");
 }
 
 #ft {
+  position: relative;
   background-color: #3C3C3C;
   height: 130px;
 }
-#ft #wrap {
+#ft #f-wrap {
   height: inherit;
 }
 #ft #fnb li {
@@ -95,7 +451,7 @@ a:hover {
 }
 #ft #fnb li a {
   color: white;
-  font-size: 9.8pt;
+  font-size: 10.8pt;
   font-weight: 300;
 }
 #ft #fnb .copyright {
@@ -104,4 +460,256 @@ a:hover {
   color: white;
   font-size: 9.8pt;
   font-weight: 300;
+}
+#ft #quick {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  z-index: 999;
+}
+#ft #quick li {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+}
+#ft #quick #btn1 {
+  background-color: #5392ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#ft #quick #btn1 .symbol {
+  height: 55px;
+}
+#ft #quick #btn2 {
+  background-color: #f8df00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#ft #quick #btn2 .kakao {
+  width: 50px;
+}
+#ft #quick #btn3 {
+  background: radial-gradient(circle farthest-corner at 32% 106%, #ffe17d 0%, #ffcd69 10%, #fa9137 28%, #eb4141 42%, transparent 82%), linear-gradient(135deg, #234bd7 12%, #c33cbe 58%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#ft #quick #btn3 .instar {
+  width: 45px;
+}
+
+/* 타이틀 - Gowun Batang */
+/* 본문 - Noto Sans KR */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+input::placeholder {
+  color: #A8A8A8;
+  /* font-size: 15pt; */
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 300;
+  letter-spacing: -0.88px;
+}
+
+#form-all {
+  margin-top: -1px;
+  width: inherit;
+  background-image: url(../asset/form_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+ul, li {
+  list-style: none;
+  padding-left: 0;
+}
+
+#form-title {
+  font-family: "Gowun Batang", serif;
+  font-size: 45pt;
+}
+
+#form-box {
+  /* position: relative; */
+  border: 0;
+  border-radius: 20px;
+  width: 1220px;
+  height: 776px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  overflow: hidden;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+#img {
+  width: 578px;
+  height: 782px;
+  background-image: url(../asset/left_img.png);
+  background-position: -5px -5px;
+}
+
+#form-date {
+  font-size: 18pt;
+}
+
+#form-date span {
+  font-size: 22pt;
+  font-weight: 500;
+}
+
+#form-group div {
+  font-size: 15pt;
+  margin: 35px 0;
+}
+
+#form-group [type=text] {
+  width: 250px;
+  padding: 8px;
+}
+
+#form-group select {
+  padding: 5px;
+  background-color: white;
+  border: 1px #A8A8A8 solid;
+  border-radius: 5px;
+  font-weight: 300;
+}
+
+.me-10 {
+  margin-right: 100px;
+}
+
+#form-group select {
+  width: 200px;
+  padding: 8px;
+}
+
+#form-group label {
+  width: 100px;
+}
+
+#label2 label {
+  font-weight: 300 !important;
+  width: 100%;
+  display: inline;
+  font-size: 14pt !important;
+}
+
+#sm-btn {
+  width: 368px;
+  height: 80px;
+  background-color: #7AB9E6;
+  border-radius: 100px;
+  border: 0;
+  color: white;
+  font-weight: 400;
+  font-size: 24pt;
+}
+
+#form-group label {
+  font-weight: 400;
+  font-size: 16pt;
+}
+
+input {
+  border: 1px #A8A8A8 solid;
+  border-radius: 5px;
+}
+
+.s-middle {
+  vertical-align: middle;
+}
+
+#e-title {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+/* 체크박스 가상요소 */
+#form-box [type=checkbox] {
+  display: none;
+}
+
+/* #label2 label::before */
+#form-box [type=checkbox] + label:before {
+  content: "\f584";
+  display: inline-block;
+  color: black;
+  border: none;
+  height: 25px;
+  margin-right: 5px;
+  /* border-radius: 2px; */
+  font-family: bootstrap-icons !important;
+}
+
+#form-box [type=checkbox]:checked + label:before {
+  content: "\f26c";
+  /* background-color: #7AB9E6; */
+  color: #7AB9E6;
+  margin-right: 5px;
+  font-family: bootstrap-icons !important;
+}
+
+/* 라디오버튼 가상요소 */
+#form-box [type=radio] {
+  display: none;
+}
+
+#form-box [type=radio] + label:before {
+  content: "\f28a";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  color: black;
+  border: none;
+  font-family: bootstrap-icons !important;
+}
+
+#form-box [type=radio]:checked + label:before {
+  content: "\f26b";
+  border: none;
+  color: #7AB9E6;
+  font-family: bootstrap-icons !important;
+}
+
+#textinfo {
+  font-size: 18px;
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+
+#textinfo div {
+  margin-bottom: 4px;
+  margin-right: 15px;
+}
+
+#waybox {
+  background-color: #F9F6ED;
+}
+#waybox #waywrap {
+  background-color: white;
+  margin-top: 40px;
+  padding-top: 40px;
+}
+#waybox #waywrap .title {
+  font-size: 20pt;
+}
+#waybox #waywrap .content {
+  margin-left: 50px;
 }/*# sourceMappingURL=my.css.map */
