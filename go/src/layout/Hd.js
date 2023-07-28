@@ -10,13 +10,14 @@ const Hd = () => {
     gnb: [
       { name: '이벤트', cls: 'li-event', href: '#eve' },
       { name: '사전예약 신청', cls: 'li-res', href: '#form-all' },
-      { name: '오시는 길', cls: 'li-way', href: '#way' }
+      { name: '오시는 길', cls: 'li-way', href: '#waywrap' }
     ],
     c_gnb:[
       { name: '이벤트', cls: 'li-event', href: '#eve' },
       { name: '사전예약 신청', cls: 'li-res', href: '#form-all' },
-      { name: '오시는 길', cls: 'li-way', href: '#way' }
+      { name: '오시는 길', cls: 'li-way', href: '#waywrap' }
     ]
+    // c_gnb는 없어도 될듯한?
   };
 
   const [activeIndex, setActiveIndex] = useState(null);

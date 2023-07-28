@@ -556,7 +556,7 @@ body.on #banner{
             justify-content:center;
             align-items: center;
             .symbol{
-                height: 55px;
+                height: 50px;
             }
         }
         #btn2{
@@ -791,16 +791,81 @@ input{
 }
 
 #waybox{
+    padding: 0;
     background-color: #F9F6ED;
+    h2{
+        font-family: "Gowun Batang";
+        font-size: 28pt;
+        margin-top: 10px;
+    }
     #waywrap{
         background-color: white;
         margin-top: 40px;
-        padding-top: 40px;
+        padding-top: 80px;
+        margin-bottom: 80px;
         .title{
-            font-size: 20pt;
+            span{
+                font-size: 20pt;
+                letter-spacing: -0.3px;
+                font-weight: 500;
+                margin-left: 5px;
+            }
         }
-        .content{
-            margin-left: 50px;
+        .content1, .content2{
+            margin-left: 60px;
+        }
+
+        .content1{
+            margin-top: -10px;
+        }
+
+        .content2{
+            margin-bottom: 40px;
         }
     }
+}
+
+#mapinfo{
+    margin-left: 40px;
+}
+
+#quick #btn1:hover{
+    background-color: #3273ffa2 !important;
+}
+
+#quick #btn2:hover{
+    background-color: #e4d83ba2 !important;
+}
+
+#quick #btn3:hover{
+    background: #7c26dd3f !important;
+}
+
+
+#quick #btn1:hover .symbol,
+#quick #btn2:hover .kakao,
+#quick #btn3:hover .instar{
+    opacity: 0.3 !important;
+}
+
+.rel{
+    position: relative;
+}
+
+.hidetitle1, .hidetitle2, .hidetitle3{
+    display: none;
+}
+
+#quick #btn1:hover .hidetitle1, 
+#quick #btn2:hover .hidetitle2, 
+#quick #btn3:hover .hidetitle3{
+    display: inline;
+    position: absolute;
+    font-weight: 400;
+    font-size: 13pt;
+    letter-spacing: -0.5px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
 }
