@@ -1,18 +1,60 @@
+import React, {useState} from "react"
+
 import 'swiper/css';
 import 'swiper/css/pagination'
 import 'swiper/css/autoplay'
 
+
 const Form = () => {
+
+    const [wr_name, setName] = useState("");
+    const [gender, setGender] = useState("");
+    const [age, setAge] = useState("");
+    const [location, setLocation] = useState("");
+    const [number, setNumber] = useState("");
+    const [disabled, setDisabled] = useState(false);
+
+    const handleChange = (event) => { 
+        setName(event.target.value); 
+    }
+
+    const numberChange = (event) => { 
+        setNumber(event.target.value); 
+    }
+
+    const agree2 = document.querySelector("#agree2")
+    const agree1 = document.querySelector("#agree1")
+
+
+    const handleSubmit = async (event) =>{
+        setDisabled(true);
+        event.preventDefault();
+        if(!agree1.checked||!agree2.checked){
+            setDisabled(false);
+        }
+            else{
+                await new Promise((r)=>setTimeout(r,1000));
+                alert(`${wr_name}님 사전예약이 완료되었습니다. 카카오 ID(${number})로 메세지 발송해드리겠습니다. 참여해주셔서 감사합니다.`)
+                setDisabled(false);}}
+
+    const agree = () => {
+        if (!document.getElementById('agree1').checked) {
+          alert('개인정보 취급방침에 동의해주세요');
+        }
+        if (!document.getElementById('agree2').checked) {
+          alert('채널 구독 동의는 필수입니다.');
+        }}
+
     return(
         <section id="form-all" className='container-md'>
             <h2 id="form-title" className="text-center text-white pt-5 pb-4">사전예약하고, 선물도 받고! <img id="e-title" src="../asset/letter_tr.png" alt="영문 타이틀"/> </h2>
             <div id="form-date" className="text-center text-white pb-4">2023년 <span>5월 27일 ~ 28일</span>(토~일) 저녁 7시~12시｜서현역 ○○○○펍(6번 출구 500M 이내 위치) </div>
-            <form action="https://naver.com" id="form-box" className="d-flex border-radius">
+            <form action="" id="form-box" className="d-flex border-radius" onSubmit={handleSubmit}>
                 <div id="img"></div>
                 <div id="form-group" className="m-auto">
                     <div>
                         <label for="name" className="me-10">이름</label>
-                        <input type="text" placeholder="김○○"/>
+                        <input type="text" name="name" placeholder="김○○" value={wr_name} onChange={handleChange} />
                     </div>
                     <div>
                         <label for="sex" className="me-10">성별</label>
@@ -32,7 +74,7 @@ const Form = () => {
                     </div>
                     <div>
                         <label for="location" className="me-10">거주지역</label>
-                        <select name="age" id="age-group">
+                        <select name="location" id="age-group">
                             <option value="null" selected>--선택--</option>
                             <option value="서울">서울</option>
                             <option value="경기도">경기</option>
@@ -53,7 +95,7 @@ const Form = () => {
                     </div>
                     <div>
                         <label for="number" className="me-10">연락처&nbsp;<span className="text-danger s-middle">*</span></label>
-                        <input type="text" className="mb-2" placeholder="카카오톡 ID를 입력해주세요" required/>
+                        <input type="text" name="number" className="mb-2" placeholder="카카오톡 ID를 입력해주세요" onChange={numberChange} required/>
                     </div>
                     <ul id="label2" className="mx-0">
                             <li className="mx-0 mb-3">
@@ -65,7 +107,7 @@ const Form = () => {
                                 <label for="agree2" className="d-flex align-items-center">&nbsp;<span>Recozy 카카오톡 채널 추가에 동의합니다.</span><a href="#">&nbsp;[필수]</a></label>
                             </li>
                     </ul>
-                    <input id="sm-btn" className="d-block mx-auto" type="submit" value="응답제출 》"/>
+                    <button id="sm-btn" className="d-block mx-auto" type="submit" onClick={agree} disabled={disabled} >응답제출</button>
                 </div>
             </form>
             <div id='textinfo' className='text-white d-flex flex-wrap justify-content-center'>
