@@ -10,11 +10,7 @@
     line-height: 0;
 }
 
-@media(max-width:600px){
-    .sm-block{
-        display: block !important;
-    }
-}
+
 
 @media (max-width:991px) {
     .md-block{
@@ -23,7 +19,31 @@
     
 }
 
-@media(max-width:360px){
+@media(max-width:500px){
+    #form-group #label2 li{
+        margin-bottom: 10px !important;
+    }
+
+    #form-group .sm-wrap{
+        text-align: center !important;
+    }
+
+    #waywrap .mapimg img{
+        padding: 10px;
+    }
+    #label2 span{
+        font-size: 13pt !important;
+    }
+    #gendername{
+        margin: 0 !important;
+        display: block;
+        width: auto !important;
+    }
+}
+
+@media(max-width:600px){
+
+
     #form-group .sm-wrap {
         display: flex !important;
         flex-direction: column !important;
@@ -34,8 +54,12 @@
         margin-bottom: 15px !important;
     }
     
-    #form-group #label2 li{
-        margin-bottom: 10px !important;
+    .womantag{
+        margin-right: 0 !important;
+    }
+
+    .sw-wrap span{
+        margin: 0 !important;
     }
     
     #form-group .sm-wrap > label{
@@ -206,7 +230,6 @@ a:hover{
     }
 
     .event-box2{
-        
         // justify-content: center !important;
         // width: 100% !important;
         position:unset !important;
@@ -280,6 +303,11 @@ a:hover{
     }
 }
 
+@media (min-width:400px){
+    .sm-block{
+        display: block !important;
+    }
+}
 
 
 @media (min-width:1001px) {
@@ -338,11 +366,21 @@ a:hover{
         align-items: center;
 
     }
+    .sm-block{
+        display: none !important;
+    }
+    .nametag{
+
+    }
+
 }
 
 
 @media(min-width:768px){
 
+    .sm-block{
+        display: inline !important;
+    }
     
 
     #eve{

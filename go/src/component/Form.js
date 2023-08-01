@@ -60,7 +60,7 @@ const Form = () => {
                     </div>
                     <div className="sm-wrap">
                         <label id="gendername" for="sex" className="nametag me-10">성별</label><span className="sm-block"></span>
-                        <input type="radio" name="gender" value="woman" id="woman"/><label for="woman"><span className="me-4">&nbsp;여성</span> </label>
+                        <input type="radio" name="gender" value="woman" id="woman"/><label for="woman"><span className="womantag me-4">&nbsp;여성</span> </label>
                         <input type="radio" name="gender" value="man" id="man"/><label for="man">&nbsp;<span>남성</span></label> 
                     </div>
                     <div className="sm-wrap">
