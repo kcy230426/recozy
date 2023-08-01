@@ -172,6 +172,22 @@ a:hover {
     right: 0;
     top: 0;
   }
+  #waybox #waywrap img {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 977px) {
+  #waybox #waywrap img {
+    margin-bottom: 50px;
+  }
+  #ft {
+    height: 340px !important;
+  }
+  #f-wrap {
+    text-align: center;
+    padding-top: 30px;
+    justify-content: center;
+  }
 }
 @media (min-width: 768px) {
   #eve #ulbox {
@@ -234,6 +250,20 @@ a:hover {
   }
   #eve #ulbox .e_bg3 {
     background-image: url("../asset/eventbg3.jpg") !important;
+  }
+}
+@media (max-width: 768px) {
+  #waybox #waywrap img {
+    margin-bottom: 50px;
+  }
+  #ft {
+    height: 340px !important;
+  }
+  #f-wrap {
+    padding-top: 30px;
+  }
+  #f-wrap {
+    text-align: center;
   }
 }
 #gnb li:hover a {
@@ -446,15 +476,18 @@ body.on #banner {
 #ft #f-wrap {
   height: inherit;
 }
-#ft #fnb li {
+#ft .fnb {
+  justify-content: center;
+}
+#ft .fnb li {
   padding: 8px 20px;
 }
-#ft #fnb li a {
+#ft .fnb li a {
   color: white;
   font-size: 10.8pt;
   font-weight: 300;
 }
-#ft #fnb .copyright {
+#ft .fnb .copyright {
   padding-top: 0;
   padding-bottom: 0;
   color: white;

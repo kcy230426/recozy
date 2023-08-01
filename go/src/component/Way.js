@@ -9,7 +9,7 @@ const Way = () =>{
         <section id="waybox" className="container-md text-center">
             <div className='imgbox'><img src={line} alt="꾸밈장식" /></div>
             <h2><strong>오시는 길 안내</strong></h2>
-            <div id="waywrap" className="d-flex justify-content-center align-items-center">
+            <div id="waywrap" className="d-lg-flex justify-content-center align-items-center">
                 <div><img src={map} alt="맵" /></div>
                 <div id="mapinfo">
                     <ul className='text-left'>

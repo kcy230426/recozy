@@ -21,10 +21,10 @@ const Ft = () => {
     return(
         <>
         <footer id="ft">
-            <div id="f-wrap" className='container d-flex justify-content-between align-items-center'> 
+            <div id="f-wrap" className='container d-lg-flex justify-content-between align-items-center'> 
             <h3><img src={f_logo} alt="하단 로고" /></h3>
-            <ul id="fnb">
-                <div className='d-flex'>
+            <ul className='fnb'>
+                <div className='d-md-flex justify-content-center'>
                 {
                     info.mydb.map((v,i)=>{
                         return(
@@ -35,7 +35,7 @@ const Ft = () => {
                 </div>
                 <li className='copyright'>COPYRIGHT© 2023 Recozy. CO.LTD ALL RIGHT RESERVED.</li>
             </ul>
-            <ul id="fnb" className='d-flex'>
+            <ul className='fnb d-flex'>
                 {
                     info.menudb.map((v,i)=>{
                         return(
