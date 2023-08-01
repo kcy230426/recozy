@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/recozy/static/css/main.3729ef05.css",
+    "main.js": "/recozy/static/js/main.db937494.js",
+    "static/js/787.b9853e33.chunk.js": "/recozy/static/js/787.b9853e33.chunk.js",
+    "static/media/in_img1.png": "/recozy/static/media/in_img1.4ce20089231e77a80bb6.png",
+    "static/media/left_img.png": "/recozy/static/media/left_img.4c5bda901614b249028a.png",
+    "static/media/in_img2.png": "/recozy/static/media/in_img2.1ba819fe68afe600aa84.png",
+    "static/media/form_bg.jpg": "/recozy/static/media/form_bg.a80dd38f9954845144ab.jpg",
+    "static/media/eventbg1.jpg": "/recozy/static/media/eventbg1.07d63b5ed64ba31f2e17.jpg",
+    "static/media/s_e_bg1.jpg": "/recozy/static/media/s_e_bg1.4c628dd6f228fdd030ba.jpg",
+    "static/media/in_img3.png": "/recozy/static/media/in_img3.bf17f9896b6b97318ca3.png",
+    "static/media/s_e_bg2.jpg": "/recozy/static/media/s_e_bg2.b1f8d80024e9f714a5de.jpg",
+    "static/media/main_bg.jpg": "/recozy/static/media/main_bg.3989a341366468726dd9.jpg",
+    "static/media/sm_img1.png": "/recozy/static/media/sm_img1.6cc9981012a9a91d9d49.png",
+    "static/media/eventbg2.jpg": "/recozy/static/media/eventbg2.d70401444fe592c77a04.jpg",
+    "static/media/sm_img2.png": "/recozy/static/media/sm_img2.25b48f50f15ab8c7ede6.png",
+    "static/media/s_e_bg3.jpg": "/recozy/static/media/s_e_bg3.aa5fc34785bf16097b99.jpg",
+    "static/media/sm_img3.png": "/recozy/static/media/sm_img3.beecae9e23a78ac7b91f.png",
+    "static/media/eventbg3.jpg": "/recozy/static/media/eventbg3.f1ee9ebcc851897b1f4d.jpg",
+    "static/media/map_img.png": "/recozy/static/media/map_img.cfbfce29cf454d7d22a8.png",
+    "static/media/subway.svg": "/recozy/static/media/subway.bb22ab566645edbbf2a6336cc2133d2b.svg",
+    "static/media/parking.svg": "/recozy/static/media/parking.66ce5074da4879d078e471fe222fd724.svg",
+    "static/media/bus.svg": "/recozy/static/media/bus.6cff6e2d29a07fead9d2dcfc72cafe3f.svg",
+    "static/media/kakao.png": "/recozy/static/media/kakao.128af68784a7cafd1da8.png",
+    "static/media/instar.png": "/recozy/static/media/instar.b5ffc383e73b10d5abf9.png",
+    "static/media/f_logo.svg": "/recozy/static/media/f_logo.c4eae6f1bbd48b8cc72c5f45ed3ff698.svg",
+    "static/media/logo.svg": "/recozy/static/media/logo.c7b7ad1a4cbc8cd31de59a40d7c99d90.svg",
+    "index.html": "/recozy/index.html",
+    "static/media/b_arrow.svg": "/recozy/static/media/b_arrow.26049b6728afe65d13b35751d3d8cd67.svg",
+    "static/media/symbol.svg": "/recozy/static/media/symbol.d552dee5c820fcafdeecd311e3b6d6ee.svg",
+    "static/media/line.svg": "/recozy/static/media/line.179c3452090a213b52f29a3619ea6ed3.svg",
+    "main.3729ef05.css.map": "/recozy/static/css/main.3729ef05.css.map",
+    "main.db937494.js.map": "/recozy/static/js/main.db937494.js.map",
+    "787.b9853e33.chunk.js.map": "/recozy/static/js/787.b9853e33.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3729ef05.css",
+    "static/js/main.db937494.js"
+  ]
+}
