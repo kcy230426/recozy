@@ -46,25 +46,27 @@ const Form = () => {
         }}
 
     return(
-        <section id="form-all" className='container-md'>
-            <h2 id="form-title" className="text-center text-white pt-5 pb-4">사전예약하고, 선물도 받고! <img id="e-title" src="../asset/letter_tr.png" alt="영문 타이틀"/> </h2>
-            <div id="form-date" className="text-center text-white pb-4">2023년 <span>5월 27일 ~ 28일</span>(토~일) 저녁 7시~12시｜서현역 ○○○○펍(6번 출구 500M 이내 위치) </div>
-            <form action="" id="form-box" className="d-flex border-radius" onSubmit={handleSubmit}>
+        <section id="form-all" className='container-lg px-4'>
+            <h2 id="form-title" className="text-center text-white pt-5 pb-4">
+                사전예약하고,<span className="md-block"></span> 선물도 받고! 
+                <img id="e-title" src="../asset/letter_tr.png" className="img-fluid" alt="영문 타이틀"/> </h2>
+            <div id="form-date" className="text-center text-white pb-4">2023년 <span>5월 27일 ~ 28일</span>(토~일)<span className="sm-block"></span> 저녁 7시~12시｜서현역 ○○○○펍<span className="sm-block md-block"></span>(6번 출구 500M 이내 위치) </div>
+            <form action="" id="form-box" className="d-lg-flex border-radius" onSubmit={handleSubmit}>
                 <div id="img"></div>
                 <div id="form-group" className="m-auto">
-                    <div>
-                        <label for="name" className="me-10">이름</label>
+                    <div className="sm-wrap">
+                        <label for="name" className="nametag me-10">이름</label>
                         <input type="text" name="name" placeholder="김○○" value={wr_name} onChange={handleChange} />
                     </div>
-                    <div>
-                        <label for="sex" className="me-10">성별</label>
+                    <div className="sm-wrap">
+                        <label id="gendername" for="sex" className="nametag me-10">성별</label><span className="sm-block"></span>
                         <input type="radio" name="gender" value="woman" id="woman"/><label for="woman"><span className="me-4">&nbsp;여성</span> </label>
                         <input type="radio" name="gender" value="man" id="man"/><label for="man">&nbsp;<span>남성</span></label> 
                     </div>
-                    <div>
-                        <label for="age" className="me-10">나이&nbsp;<span className="text-danger s-middle">*</span></label>
+                    <div className="sm-wrap">
+                        <label for="age" className="nametag me-10">나이&nbsp;<span className="text-danger s-middle">*</span></label>
                         <select name="age" id="age-group" required>
-                            <option value="null" selected>--선택--</option>
+                            <option value="null">--선택--</option>
                             <option value="10" >10대</option>
                             <option value="20">20대</option>
                             <option value="30">30대</option>
@@ -72,8 +74,8 @@ const Form = () => {
                             <option value="50">50대 이상</option>
                         </select>
                     </div>
-                    <div>
-                        <label for="location" className="me-10">거주지역</label>
+                    <div className="sm-wrap">
+                        <label for="location" className="nametag me-10">거주지역</label>
                         <select name="location" id="age-group">
                             <option value="null" selected>--선택--</option>
                             <option value="서울">서울</option>
@@ -93,8 +95,8 @@ const Form = () => {
                             <option value="울산">울산</option>
                         </select>
                     </div>
-                    <div>
-                        <label for="number" className="me-10">연락처&nbsp;<span className="text-danger s-middle">*</span></label>
+                    <div className="sm-wrap">
+                        <label for="number" className="nametag me-10">연락처&nbsp;<span className="text-danger s-middle">*</span></label>
                         <input type="text" name="number" className="mb-2" placeholder="카카오톡 ID를 입력해주세요" onChange={numberChange} required/>
                     </div>
                     <ul id="label2" className="mx-0">
@@ -107,10 +109,10 @@ const Form = () => {
                                 <label for="agree2" className="d-flex align-items-center">&nbsp;<span>Recozy 카카오톡 채널 추가에 동의합니다.</span><a href="#">&nbsp;[필수]</a></label>
                             </li>
                     </ul>
-                    <button id="sm-btn" className="d-block mx-auto" type="submit" onClick={agree} disabled={disabled} >응답제출</button>
+                    <button id="sm-btn" className="d-block mx-auto mb-4" type="submit" onClick={agree} disabled={disabled} >응답제출</button>
                 </div>
             </form>
-            <div id='textinfo' className='text-white d-flex flex-wrap justify-content-center'>
+            <div id='textinfo' className='text-white d-lg-flex flex-wrap justify-content-center'>
                 <div>* 추첨을 통해 이벤트에 참여하신 손님 중 10분께 사이드메뉴 무료교환권을 드립니다.</div>
                 <div>* 예약석이 전부 마감될 경우 이벤트가 조기 종료될 수 있습니다.</div>
                 <div>* 응답은 1인 1회 가능하며, 예약자 포함 최대 4인까지 동행할 수 있습니다.</div>

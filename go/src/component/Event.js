@@ -35,7 +35,7 @@ const Event = () => {
                   txt4:"· 2020년에 <NAMMSE  나얼의 음악세계>라는 유튜브 채널 개설,",
                   txt5:"다양한 음악을 추천해주는 플레이스트와 LP 디제잉 제공중",
                   txt6:"",
-                  cls:"event-box"}
+                  cls:"event-box2"}
                   ],
         third : [{title1:"독보적인 뮤지션", 
                   title2:" 나얼",
@@ -45,7 +45,7 @@ const Event = () => {
                   txt4:"· 2017년,  < 기억의 빈자리 > , < 글로리아 >, < Baby Funk >발매,",
                   txt5:"· 2018년, < Sound Doctrine> 발매",
                   txt6:"· 2023년, < Soul Pop City > 발매 / < 걸음을 멈추는 날 > 공개",
-                  cls:"event-box"}
+                  cls:"event-box2"}
                   ],
     }
 
@@ -57,10 +57,10 @@ const Event = () => {
                     spaceBetween={0}
                     slidesPerView={1}
                     pagination={{ clickable: true }}
-                    autoplay={{
-                        delay: 5000,
-                        disableOnInteraction: false,
-                      }}
+                    // autoplay={{
+                    //     delay: 5000,
+                    //     disableOnInteraction: false,
+                    //   }}
                     modules={[Autoplay, Pagination]}
                     >
                         <SwiperSlide>

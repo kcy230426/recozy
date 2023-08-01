@@ -1,6 +1,64 @@
 // 공통
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
 
+.sm-block{
+    line-height: 0;
+}
+
+
+.md-block{
+    line-height: 0;
+}
+
+@media(max-width:600px){
+    .sm-block{
+        display: block !important;
+    }
+}
+
+@media (max-width:991px) {
+    .md-block{
+        display: block;
+    }
+    
+}
+
+@media(max-width:360px){
+    #form-group .sm-wrap {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin: 0 !important;
+        margin-bottom: 0px !important;
+        margin-bottom: 15px !important;
+    }
+    
+    #form-group #label2 li{
+        margin-bottom: 10px !important;
+    }
+    
+    #form-group .sm-wrap > label{
+        margin: 0 !important;
+        text-align: center !important;
+    }
+    
+    #textinfo div{
+        text-align: left !important;
+    }
+}
+
+@media(max-width:431px){
+    .textbox{
+        margin-top: 0 !important;
+    }
+    #gnb .li-event a{
+        font-size: 11pt !important;
+    }
+    #gnb .li-event{
+        padding: 10px !important;
+    }
+}
 .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
     position: absolute !important;
     bottom: 10% !important;
@@ -99,7 +157,6 @@ a:hover{
         margin-top: -10px;
     }
     .textbox{
-        margin-top: 30px;
         margin-right: -20px;
     }
 
@@ -113,10 +170,7 @@ a:hover{
         left: 4%;    
         transform: translateY(-50%);}
 
-    .event-box .title{
-        font-size: 12pt !important;
-        letter-spacing: -1px !important;
-    }
+   
 
     .event-box .spot{
         font-size: 25pt !important;
@@ -142,6 +196,24 @@ a:hover{
         transform:none !important;
     }
 
+    .event-box2 .title{
+        font-size: 17pt !important;
+        letter-spacing: -1px !important;
+    }
+
+    .event-box2 .spot{
+        font-size: 25pt !important;
+    }
+
+    .event-box2{
+        
+        // justify-content: center !important;
+        // width: 100% !important;
+        position:unset !important;
+        margin-top: -140px !important;
+        transform:none !important;
+    }
+
     .event-box .title{
         font-size:17pt !important;
     }
@@ -150,7 +222,7 @@ a:hover{
         font-size:26pt !important;
     }
 
-    .event-box div{
+    .event-box div, .event-box2 div{
         font-size:11pt !important;
         letter-spacing:-1.2px !important;
     }
@@ -174,14 +246,38 @@ a:hover{
     .e_bg2{
         height: 100% !important;
         background-size: contain;
+        max-height: 100% !important;
         background-image: url("../asset/s_e_bg2.jpg") !important;
     }
+
+    .e_bg2 img{
+        content: url("../asset/sm_img2.png") !important;
+        width: 100%;
+        position: absolute !important;
+        top: 100% !important;
+        transform: translateY(-100%);
+    }
+
     .e_bg3{
         height: 100% !important;
+        max-height: 100% !important;
         background-size: contain;
         background-image: url("../asset/s_e_bg3.jpg") !important;
     }
+
+    .e_bg3 img{
+        content: url("../asset/sm_img3.png") !important;
+        width: 100%;
+        position: absolute !important;
+        top: 100% !important;
+        transform: translateY(-100%);
+    }
     
+    .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+        position: absolute;
+        left: 0 !important;
+        bottom: 5% !important;
+    }
 }
 
 
@@ -224,6 +320,23 @@ a:hover{
         text-align: center;
         padding-top: 30px;
         justify-content: center;
+    }
+    #form-group .nametag{
+        margin-left: 70px;
+    }
+
+    #label2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mapinfo{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
     }
 }
 
@@ -333,6 +446,20 @@ a:hover{
 
     #f-wrap{
         text-align: center;
+    }
+
+    #form-title{
+        font-size: 38pt !important;
+        padding-bottom: 14px !important;
+    }
+
+    #form-date{
+        font-size: 14pt !important;
+        padding-bottom: 40px !important;
+    }
+
+    #form-date span{
+        font-size: 18pt !important;
     }
 
 }
@@ -455,9 +582,9 @@ a:hover{
 
 }
 
-body.on #gnb li{
-    padding: 25px 50px !important;
-}
+// body.on #gnb li{
+//     padding: 25px 50px !important;
+// }
 
 body.on #banner{
     margin-top: -30px !important;
@@ -520,7 +647,7 @@ body.on #banner{
                 }
                 ul{
                     color: white;
-                    .event-box{
+                    .event-box, .event-box2{
                         margin-top: -40px;
                         letter-spacing: -1px;
                         font-weight: 300;
@@ -695,19 +822,32 @@ ul, li{
  /* position: relative; */
  border: 0;
  border-radius: 20px;
- width: 1220px;
+ max-width: 1220px;
  height: 776px;  
  margin: 0 auto; 
  background-color: rgba(255, 255, 255, 0.8);
  overflow: hidden;
  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.25);
+ @media (max-width:1220px) {
+    height: auto; 
+    
+ }
 }
 
 #img{
-    width: 578px;
-    height: 782px;
+    width: 578px;    
     background-image: url(../asset/left_img.png);
-    background-position: -5px -5px;
+    background-position:center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    @media (max-width:990px) {
+        width:auto;
+        padding-top: 133%;
+        
+    }
+}
+
+#gendername{
 }
 
 #form-date{

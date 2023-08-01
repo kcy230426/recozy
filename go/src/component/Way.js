@@ -10,7 +10,7 @@ const Way = () =>{
             <div className='imgbox'><img src={line} alt="꾸밈장식" /></div>
             <h2><strong>오시는 길 안내</strong></h2>
             <div id="waywrap" className="d-lg-flex justify-content-center align-items-center">
-                <div><img src={map} alt="맵" /></div>
+                <div><img src={map} alt="맵" className='img-fluid' /></div>
                 <div id="mapinfo">
                     <ul className='text-left'>
                         <li className='title'><img src={bus} class="icons" alt="버스아이콘" /><span>버스</span></li>
