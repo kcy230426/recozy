@@ -3,6 +3,7 @@ import React, {useState} from "react"
 import 'swiper/css';
 import 'swiper/css/pagination'
 import 'swiper/css/autoplay'
+import letter from './../asset/letter_tr.png'
 
 
 const Form = () => {
@@ -49,7 +50,7 @@ const Form = () => {
         <section id="form-all" className='container-lg px-4'>
             <h2 id="form-title" className="text-center text-white pt-5 pb-4">
                 사전예약하고,<span className="md-block"></span> 선물도 받고! 
-                <img id="e-title" src="../asset/letter_tr.png" className="img-fluid" alt="영문 타이틀"/> </h2>
+                <img id="e-title" src={letter} className="img-fluid" alt="영문 타이틀"/> </h2>
             <div id="form-date" className="text-center text-white pb-4">2023년 <span>5월 27일 ~ 28일</span>(토~일)<span className="sm-block"></span> 저녁 7시~12시｜서현역 ○○○○펍<span className="sm-block md-block"></span>(6번 출구 500M 이내 위치) </div>
             <form action="" id="form-box" className="d-lg-flex border-radius" onSubmit={handleSubmit}>
                 <div id="img"></div>
