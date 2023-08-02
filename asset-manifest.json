@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/recozy/static/css/main.3729ef05.css",
-    "main.js": "/recozy/static/js/main.74980240.js",
+    "main.js": "/recozy/static/js/main.22893bcb.js",
     "static/js/787.b9853e33.chunk.js": "/recozy/static/js/787.b9853e33.chunk.js",
     "static/media/in_img1.png": "/recozy/static/media/in_img1.4ce20089231e77a80bb6.png",
     "static/media/left_img.png": "/recozy/static/media/left_img.4c5bda901614b249028a.png",
@@ -32,11 +32,11 @@
     "static/media/symbol.svg": "/recozy/static/media/symbol.d552dee5c820fcafdeecd311e3b6d6ee.svg",
     "static/media/line.svg": "/recozy/static/media/line.179c3452090a213b52f29a3619ea6ed3.svg",
     "main.3729ef05.css.map": "/recozy/static/css/main.3729ef05.css.map",
-    "main.74980240.js.map": "/recozy/static/js/main.74980240.js.map",
+    "main.22893bcb.js.map": "/recozy/static/js/main.22893bcb.js.map",
     "787.b9853e33.chunk.js.map": "/recozy/static/js/787.b9853e33.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3729ef05.css",
-    "static/js/main.74980240.js"
+    "static/js/main.22893bcb.js"
   ]
 }
