@@ -5,16 +5,72 @@
   line-height: 0;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 .md-block {
   line-height: 0;
 }
 
-@media (max-width: 991px) {
+.swiper-slide {
+  height: auto !important;
+}
+
+@media (min-width: 489px) and (max-width: 1000px) {
+  #eve .event-box div, #eve .event-box2 div, #eve .event-box3 div {
+    font-size: 13pt !important;
+  }
+}
+@media (max-width: 1000px) {
   .md-block {
     display: block;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 486px) {
+  .event-box, .event-box2, .event-box3 {
+    margin-left: 0 !important;
+  }
+  #eve .event-box div, #eve .event-box2 div, #eve .event-box3 div {
+    font-size: 11pt !important;
+  }
+  #ft #quick {
+    bottom: -40px !important;
+    right: -20px !important;
+  }
+  #ft #quick li {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 100%;
+  }
+  .hidetitle1, .hidetitle2, .hidetitle3 {
+    font-size: 10pt !important;
+  }
+  #arrow img {
+    width: 50px !important;
+  }
+  #ft #quick #btn1 .symbol, #ft #quick #btn2 .kakao, #ft #quick #btn3 .instar {
+    width: 30px !important;
+  }
+  .agree-btn {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 13pt;
+  }
+  .event-box, .event-box2, .event-box3 {
+    margin-bottom: 30px !important;
+  }
+  #banner .textbox {
+    font-family: "Gowun Batang" !important;
+    position: absolute !important;
+    top: 40% !important;
+    left: 14% !important;
+    color: white !important;
+  }
+  .textbox h3 {
+    font-size: 20pt !important;
+  }
   #form-group #label2 li {
     margin-bottom: 10px !important;
   }
@@ -25,7 +81,7 @@
     padding: 10px;
   }
   #label2 span {
-    font-size: 13pt !important;
+    font-size: 12pt !important;
   }
   #gendername {
     margin: 0 !important;
@@ -33,7 +89,43 @@
     width: auto !important;
   }
 }
-@media (max-width: 600px) {
+#label2 a {
+  display: flex;
+  margin-left: 0px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+#eve ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 40px;
+}
+
+.i-ytb:hover, .i-ins:hover {
+  opacity: 0.7;
+}
+
+.i-info1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 7pt;
+}
+
+@media (max-width: 486px) {
+  .snsicon {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .snsicon img {
+    height: 56px !important;
+  }
   #form-group .sm-wrap {
     display: flex !important;
     flex-direction: column !important;
@@ -57,15 +149,24 @@
     text-align: left !important;
   }
 }
-@media (max-width: 431px) {
+@media (max-width: 486px) {
+  #sm-btn {
+    width: 200px !important;
+    height: 60px !important;
+    font-size: 20pt !important;
+  }
   .textbox {
     margin-top: 0 !important;
   }
-  #gnb .li-event a {
+  #gnb .li-event a, #gnb .li-res a, #gnb .li-way a {
     font-size: 11pt !important;
   }
-  #gnb .li-event {
-    padding: 10px !important;
+  #gnb .li-event, #gnb .li-res, #gnb .li-way {
+    padding: 25px !important;
+  }
+  #listbtn.open + #gnb {
+    height: auto !important;
+    border-radius: 0 0 35px 35px;
   }
 }
 .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
@@ -89,6 +190,11 @@
 * {
   padding: 0;
   margin: 0;
+}
+
+.snsicon img {
+  height: 70px;
+  margin-right: 8px;
 }
 
 .newcontainer {
@@ -121,7 +227,11 @@ a:hover {
   box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.349);
 }
 
-@media (max-width: 991px) {
+.snsicon {
+  margin-left: 0px !important;
+}
+
+@media (max-width: 1000px) {
   #gnb {
     width: 100% !important;
     position: absolute;
@@ -139,18 +249,18 @@ a:hover {
     padding: 30px 20px !important;
   }
   #listbtn.open + #gnb {
-    height: auto !important;
-    border-radius: 0 0 100px 100px;
+    height: 70px !important;
+    border-radius: 0 0 35px 35px;
   }
   #tab h1 {
     padding: 30px 0;
   }
   .textbox h3 {
-    font-size: 26pt !important;
+    font-size: 22pt !important;
     letter-spacing: -3px !important;
   }
   .textbox h3 span {
-    height: 44px !important;
+    height: 40px !important;
   }
   .textbox p {
     font-size: 13pt !important;
@@ -185,7 +295,7 @@ a:hover {
   }
   .event-box {
     position: unset !important;
-    margin-top: 40px !important;
+    padding-top: 40px !important;
     transform: none !important;
   }
   .event-box2 .title {
@@ -197,8 +307,11 @@ a:hover {
   }
   .event-box2 {
     position: unset !important;
-    margin-top: -140px !important;
+    padding-top: 40px;
     transform: none !important;
+  }
+  .event-box3 {
+    padding-top: 40px;
   }
   .event-box .title {
     font-size: 17pt !important;
@@ -211,19 +324,14 @@ a:hover {
     letter-spacing: -1.2px !important;
   }
   .e_bg1 {
-    padding: 0 !important;
     height: 100% !important;
     max-height: 100% !important;
     background-size: cover !important;
     background-image: url("../asset/s_e_bg1.jpg") !important;
-    position: relative !important;
   }
-  .e_bg1 img {
+  .e_bg1 .imgs {
     content: url("../asset/sm_img1.png") !important;
     width: 100%;
-    position: absolute !important;
-    top: 100% !important;
-    transform: translateY(-100%);
   }
   .e_bg2 {
     height: 100% !important;
@@ -231,12 +339,9 @@ a:hover {
     max-height: 100% !important;
     background-image: url("../asset/s_e_bg2.jpg") !important;
   }
-  .e_bg2 img {
+  .e_bg2 .imgs {
     content: url("../asset/sm_img2.png") !important;
     width: 100%;
-    position: absolute !important;
-    top: 100% !important;
-    transform: translateY(-100%);
   }
   .e_bg3 {
     height: 100% !important;
@@ -244,12 +349,9 @@ a:hover {
     background-size: contain;
     background-image: url("../asset/s_e_bg3.jpg") !important;
   }
-  .e_bg3 img {
+  .e_bg3 .imgs {
     content: url("../asset/sm_img3.png") !important;
     width: 100%;
-    position: absolute !important;
-    top: 100% !important;
-    transform: translateY(-100%);
   }
   .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
     position: absolute;
@@ -257,26 +359,43 @@ a:hover {
     bottom: 5% !important;
   }
 }
-@media (min-width: 400px) {
+@media (max-width: 486px) {
+  #form-group #label2 li {
+    padding: 20px;
+  }
+  #banner .textbox h3 {
+    text-align: center;
+  }
+  #banner .textbox p {
+    font-size: 12pt !important;
+    text-align: center !important;
+  }
   .sm-block {
     display: block !important;
+  }
+  #listbtn.open + #gnb {
+    height: 70px !important;
+    border-radius: 0 0 35px 35px;
   }
 }
 @media (min-width: 1001px) {
   #listbtn {
     display: none;
   }
-  [class^=e_bg] img {
-    height: 100%;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
   #waybox #waywrap img {
     margin-bottom: 30px;
   }
 }
-@media (max-width: 977px) {
+@media (min-width: 768px) {
+  #listbtn.open + #gnb {
+    height: 86px !important;
+    border-radius: 0 0 35px 35px;
+  }
+  #form_ {
+    margin-top: -50px;
+  }
+}
+@media (max-width: 1000px) {
   #waybox #waywrap img {
     margin-bottom: 50px;
   }
@@ -303,76 +422,21 @@ a:hover {
     align-items: center;
   }
   .sm-block {
-    display: none !important;
+    display: block !important;
   }
 }
 @media (min-width: 768px) {
+  .snsicon {
+    margin-left: 40px !important;
+  }
+  #label2 a {
+    margin-left: 20px !important;
+  }
   .sm-block {
     display: inline !important;
   }
-  #eve #ulbox {
-    max-width: 1440px !important;
-  }
-  #eve #ulbox .swiper-slide {
-    display: flex !important;
-    margin-right: 0 !important;
-  }
-  #eve #ulbox .swiper-slide [class^=e_bg] {
-    position: relative !important;
-    height: 0 !important;
-    padding-top: 42% !important;
-    max-height: 600px !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    width: 100% !important;
-  }
-  #eve #ulbox .swiper-slide [class^=e_bg] img {
-    position: absolute !important;
-    right: 0 !important;
-    top: 0 !important;
-  }
-  #eve #ulbox .swiper-slide [class^=e_bg] ul {
-    color: white !important;
-  }
-  #eve #ulbox .swiper-slide [class^=e_bg] ul .event-box {
-    margin-top: -40px !important;
-    letter-spacing: -1px !important;
-    font-weight: 300 !important;
-    font-size: 16pt !important;
-    position: absolute !important;
-    top: 50% !important;
-    left: 4% !important;
-    transform: translateY(-50%) !important;
-  }
-  #eve #ulbox .swiper-slide [class^=e_bg] ul .event-box .title {
-    display: inline-block !important;
-    letter-spacing: -2px !important;
-    font-family: "Gowun Batang", serif !important;
-    font-size: 25pt !important;
-    padding: 20px 0 !important;
-  }
-  #eve #ulbox .swiper-slide [class^=e_bg] ul .event-box .spot {
-    letter-spacing: -2px !important;
-    font-family: "Gowun Batang", serif !important;
-    font-size: 35pt !important;
-  }
-  #eve #ulbox .swiper-slide [class^=e_bg] ul .event-box div {
-    margin-top: 4px !important;
-  }
-  #eve #ulbox img {
-    width: auto;
-  }
-  #eve #ulbox .e_bg1 {
-    background-image: url("../asset/eventbg1.jpg") !important;
-  }
-  #eve #ulbox .e_bg2 {
-    background-image: url("../asset/eventbg2.jpg") !important;
-  }
-  #eve #ulbox .e_bg3 {
-    background-image: url("../asset/eventbg3.jpg") !important;
-  }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #waybox #waywrap img {
     margin-bottom: 50px;
   }
@@ -386,7 +450,7 @@ a:hover {
     text-align: center;
   }
   #form-title {
-    font-size: 38pt !important;
+    font-size: 32pt !important;
     padding-bottom: 14px !important;
   }
   #form-date {
@@ -456,7 +520,7 @@ a:hover {
   background-color: transparent;
   border: 0;
   position: absolute;
-  font-size: 35pt;
+  font-size: 33pt;
   top: 50%;
   padding-left: 10px;
   transform: translateY(-50%);
@@ -542,45 +606,35 @@ body.on #banner {
 }
 #eve #ulbox .swiper-slide [class^=e_bg] {
   position: relative;
-  height: 0;
-  padding-top: 42%;
-  max-height: 600px;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-}
-#eve #ulbox .swiper-slide [class^=e_bg] img {
-  position: absolute;
-  right: 0;
-  top: 0;
 }
 #eve #ulbox .swiper-slide [class^=e_bg] ul {
   color: white;
 }
-#eve #ulbox .swiper-slide [class^=e_bg] ul .event-box, #eve #ulbox .swiper-slide [class^=e_bg] ul .event-box2 {
-  margin-top: -40px;
+#eve #ulbox .swiper-slide [class^=e_bg] ul .event-box, #eve #ulbox .swiper-slide [class^=e_bg] ul .event-box2, #eve #ulbox .swiper-slide [class^=e_bg] ul .event-box3 {
   letter-spacing: -1px;
   font-weight: 300;
   font-size: 16pt;
-  position: absolute;
-  top: 50%;
-  left: 4%;
-  transform: translateY(-50%);
+  margin-bottom: 26px;
+  margin-left: 40px;
 }
-#eve #ulbox .swiper-slide [class^=e_bg] ul .event-box .title, #eve #ulbox .swiper-slide [class^=e_bg] ul .event-box2 .title {
+#eve #ulbox .swiper-slide [class^=e_bg] ul .event-box .title, #eve #ulbox .swiper-slide [class^=e_bg] ul .event-box2 .title, #eve #ulbox .swiper-slide [class^=e_bg] ul .event-box3 .title {
   display: inline-block;
   letter-spacing: -2px;
   font-family: "Gowun Batang", serif;
   font-size: 25pt;
   padding: 20px 0;
+  margin-top: 20px;
 }
-#eve #ulbox .swiper-slide [class^=e_bg] ul .event-box .spot, #eve #ulbox .swiper-slide [class^=e_bg] ul .event-box2 .spot {
+#eve #ulbox .swiper-slide [class^=e_bg] ul .event-box .spot, #eve #ulbox .swiper-slide [class^=e_bg] ul .event-box2 .spot, #eve #ulbox .swiper-slide [class^=e_bg] ul .event-box3 .spot {
   letter-spacing: -2px;
   font-family: "Gowun Batang", serif;
   font-size: 35pt;
 }
-#eve #ulbox .swiper-slide [class^=e_bg] ul .event-box div, #eve #ulbox .swiper-slide [class^=e_bg] ul .event-box2 div {
+#eve #ulbox .swiper-slide [class^=e_bg] ul .event-box div, #eve #ulbox .swiper-slide [class^=e_bg] ul .event-box2 div, #eve #ulbox .swiper-slide [class^=e_bg] ul .event-box3 div {
   margin-top: 4px;
+  font-size: 15pt;
 }
 #eve #ulbox img {
   width: auto;
@@ -626,7 +680,6 @@ body.on #banner {
   bottom: 0;
   right: 0;
   margin-right: 40px;
-  margin-bottom: 20px;
   z-index: 999;
 }
 #ft #quick li {
@@ -700,6 +753,7 @@ ul, li {
 }
 
 #form-title {
+  position: relative;
   font-family: "Gowun Batang", serif;
   font-size: 45pt;
 }
@@ -715,7 +769,7 @@ ul, li {
   overflow: hidden;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.25);
 }
-@media (max-width: 1220px) {
+@media (max-width: 1000px) {
   #form-box {
     height: auto;
   }
@@ -728,7 +782,7 @@ ul, li {
   background-size: 100%;
   background-repeat: no-repeat;
 }
-@media (max-width: 990px) {
+@media (max-width: 1000px) {
   #img {
     width: auto;
     padding-top: 133%;
@@ -871,6 +925,14 @@ input {
   margin-right: 15px;
 }
 
+@media all and (max-width: 486px) {
+  .text-left .content1, .text-left .content2 {
+    margin-left: 0px !important;
+  }
+  .me-10 {
+    margin-right: 0 !important;
+  }
+}
 #waybox {
   padding: 0;
   background-color: #F9F6ED;

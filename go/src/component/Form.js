@@ -47,7 +47,7 @@ const Form = () => {
         }}
 
     return(
-        <section id="form-all" className='container-lg px-4'>
+        <section id="form-all" className='container-lg p-4'>
             <h2 id="form-title" className="text-center text-white pt-5 pb-4">
                 사전예약하고,<span className="md-block"></span> 선물도 받고! 
                 <img id="e-title" src={letter} className="img-fluid" alt="영문 타이틀"/> </h2>
@@ -59,7 +59,7 @@ const Form = () => {
                         <label for="name" className="nametag me-10">이름</label>
                         <input type="text" name="name" placeholder="김○○" value={wr_name} onChange={handleChange} />
                     </div>
-                    <div className="sm-wrap">
+                    <div className="sm-wrap d-flex">
                         <label id="gendername" for="sex" className="nametag me-10">성별</label><span className="sm-block"></span>
                         <input type="radio" name="gender" value="woman" id="woman"/><label for="woman"><span className="womantag me-4">&nbsp;여성</span> </label>
                         <input type="radio" name="gender" value="man" id="man"/><label for="man">&nbsp;<span>남성</span></label> 
@@ -103,11 +103,12 @@ const Form = () => {
                     <ul id="label2" className="mx-0">
                             <li className="mx-0 mb-3">
                                 <input type="checkbox" id="agree1"/>
-                                <label for="agree1" className="d-flex align-items-center">&nbsp;<span>개인정보 취급방침에 동의합니다.</span><a href="#">&nbsp;[약관보기]</a></label>
+                                <label for="agree1" className="d-md-flex align-items-center">&nbsp;<span>개인정보 취급방침에 동의합니다.</span>
+                                <a href="#" className="d-flex justify-content-center">&nbsp;<span className="sm-block"></span><p className="agree-btn">[약관보기]</p></a></label>
                             </li>
                             <li className="mx-0 mb-5">
                                 <input type="checkbox" id="agree2"/>
-                                <label for="agree2" className="d-flex align-items-center">&nbsp;<span>Recozy 카카오톡 채널 추가에 동의합니다.</span><a href="#">&nbsp;[필수]</a></label>
+                                <label for="agree2" className="d-md-flex align-items-center">&nbsp;<span>Recozy 카카오톡 채널 추가에 동의합니다.</span><a href="#" className="d-flex justify-content-center">&nbsp;<span className="sm-block"></span><p className="agree-btn">[필수]</p></a></label>
                             </li>
                     </ul>
                     <button id="sm-btn" className="d-block mx-auto mb-4" type="submit" onClick={agree} disabled={disabled} >응답제출</button>
