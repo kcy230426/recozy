@@ -27,13 +27,24 @@ p{
 
 
 @media (max-width:1000px) {
+    
+    #listbtn.open + #gnb{
+        height:70px !important;
+        border-radius: 0 0 35px 35px;
+    }
+
     .md-block{
         display: block;
     }
- 
+
+    #gnb > ul > li{
+        display: flex !important;
+        padding: 22px 40px !important;
+    }
 }
 
 @media(max-width:486px){
+
     .event-box, .event-box2, .event-box3{
         margin-left: 0 !important;
     }
@@ -52,11 +63,16 @@ p{
         border-radius: 100%;
     }
 
-    .hidetitle1, .hidetitle2, .hidetitle3{
+    .hidetitle{
         font-size: 10pt !important;
     }
-    #arrow img{
+    
+    #quick .arrow{
         width: 50px !important;
+    }
+
+    #quick #btn4{
+        margin-bottom: 20px;
     }
 
     #ft #quick #btn1 .symbol, #ft #quick #btn2 .kakao, #ft #quick #btn3 .instar{
@@ -77,8 +93,8 @@ p{
     #banner .textbox {
         font-family: "Gowun Batang" !important;
         position: absolute !important;
-        top: 40% !important;
-        left: 14% !important;
+        // top: 40% !important;
+        // left: 14% !important;
         color: white !important;
       }
 
@@ -143,24 +159,20 @@ p{
     z-index: 999;
 }
 
-.ytb-a:hover{
-    background: red;
-    opacity: 0.8;
-}
 
-.ins-a:hover{
-    background: #7c26dd3f !important;
-    background-blend-mode: screen;
-}
+
+
 
 .ytb-a:hover .i-info1{
-    display: flex;
+    display: block;
     color: white;
+    mix-blend-mode: screen;
 }
 
 .ins-a:hover .i-info2{
     display: block;
     color: white;
+    mix-blend-mode: screen;
 }
 
 .snsicon{
@@ -182,8 +194,13 @@ p{
     .snsicon{
         display: flex;
         margin-bottom: 20px;
+        .ytb-a, .ins-a{
+            width: 60px;
+            height: 60px;
+        }
         img{
-            width: 50px !important;
+            width: 40px !important;
+            height: auto !important;
         }
 
     }
@@ -282,6 +299,23 @@ p{
     background: radial-gradient(circle farthest-corner at 32% 106%,#ffe17d 0%,#ffcd69 10%,#fa9137 28%,#eb4141 42%,transparent 82%) , linear-gradient(135deg,#234bd7 12%,#c33cbe 58%);
 }
 
+.ytb-a:hover{
+    mix-blend-mode:normal;
+    background-color: rgba(148, 6, 6, 0.692);
+}
+
+.ytb-a:hover img{
+    opacity: 0.5;
+}
+
+.ins-a:hover img{
+    opacity: 0.5;
+}
+
+.ins-a:hover{
+    mix-blend-mode:normal;
+    background: rgba(193, 145, 255, 0.411);
+}
 
 .snsicon .i-ytb{
     height: 38px;
@@ -325,6 +359,8 @@ a:hover{
     margin-left: 0px !important;
 }
 
+
+
 @media(max-width:1000px) {
 
     #gnb{
@@ -340,15 +376,12 @@ a:hover{
         transition: 0.2s;
     }
 
-    #gnb li{
-        padding: 30px 20px !important;
+    // #gnb li{
+    //     padding: 20px 20px !important;
         
-    }
+    // }
 
-    #listbtn.open + #gnb{
-        height:70px !important;
-        border-radius: 0 0 35px 35px;
-    }
+  
 
     
     #tab h1{
@@ -487,6 +520,9 @@ a:hover{
 }
 
 @media (max-width:486px){
+    .i-info1, .i-info2{
+        display: none !important;
+    }
     #form-group #label2 li{
         padding: 20px;
     }
@@ -500,15 +536,14 @@ a:hover{
     .sm-block{
         display: block !important;
     }
-
-    #listbtn.open + #gnb{
-        height:70px !important;
-        border-radius: 0 0 35px 35px;
-    }
 }
 
 
 @media (min-width:1001px) {
+    .kcy-text-lg-start{
+        text-align: left !important;
+    }
+
     #listbtn{
         display: none;
     }
@@ -528,10 +563,6 @@ a:hover{
     }
 
 @media(min-width:768px){
-    #listbtn.open + #gnb{
-        height:86px !important;
-        border-radius: 0 0 35px 35px;
-    }
     #form_{
         margin-top: -50px;
     }
@@ -647,7 +678,7 @@ a:hover{
     left: 50%; /* 시작점을 가운데로 설정합니다. */
     background-color: #F1605F;
     width: 0;
-    height: 5px;
+    height: 4px;
     transition: 0.3s;
     animation-name: expand;
     animation-direction: alternate; /* 애니메이션의 방향을 번갈아가며 재생합니다. */
@@ -662,7 +693,7 @@ a:hover{
     bottom: 0;
     background-color: #F1605F;
     width: 100%;
-    height: 5px;
+    height: 4px;
     
 }
 
@@ -842,6 +873,7 @@ body.on #banner{
                         }
                         .spot{
                             letter-spacing: -2px;
+                            margin-left: 8px;
                             font-family: "Gowun Batang",serif;
                             font-size: 35pt;
                         }
@@ -920,7 +952,7 @@ body.on #banner{
             justify-content:center;
             align-items: center;
             .symbol{
-                height: 50px;
+                height: 60px;
             }
         }
         #btn2{
@@ -929,19 +961,25 @@ body.on #banner{
             justify-content:center;
             align-items: center;
             .kakao{
-                width: 50px;
+                width: 54px;
             }
         }
         #btn3{
-            background: radial-gradient(circle farthest-corner at 32% 106%,#ffe17d 0%,#ffcd69 10%,#fa9137 28%,#eb4141 42%,transparent 82%) , linear-gradient(135deg,#234bd7 12%,#c33cbe 58%);
+            background: rgb(88, 88, 88);
             display: flex;
             justify-content:center;
             align-items: center;
             .instar{
-                width: 45px;
+                width: 50px;
             }
         }
-
+        #btn4 {
+            margin-top: 10px;
+            a{
+            display: flex;
+            justify-content: center;
+        }
+    }
     }
 }
 
@@ -1068,6 +1106,7 @@ ul, li{
 }
 
 
+
 #label2 label{
     font-weight: 300 !important;
     width: 100%;
@@ -1192,7 +1231,7 @@ input{
         margin-top: 40px;
         padding-top: 80px;
         margin-bottom: 80px;
-        .title{
+        #mapinfo{
             span{
                 font-size: 20pt;
                 letter-spacing: -0.3px;
@@ -1227,7 +1266,7 @@ input{
 }
 
 #quick #btn3:hover{
-    background: #7c26dd3f !important;
+    background-color: #888a8fbe !important;
 }
 
 
@@ -1241,13 +1280,13 @@ input{
     position: relative;
 }
 
-.hidetitle1, .hidetitle2, .hidetitle3{
+.hidetitle{
     display: none;
 }
 
-#quick #btn1:hover .hidetitle1, 
-#quick #btn2:hover .hidetitle2, 
-#quick #btn3:hover .hidetitle3{
+#quick #btn1:hover .hidetitle, 
+#quick #btn2:hover .hidetitle, 
+#quick #btn3:hover .hidetitle{
     display: inline;
     position: absolute;
     font-weight: 400;

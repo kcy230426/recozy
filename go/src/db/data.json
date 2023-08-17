@@ -1,14 +1,14 @@
 {
     "nav" :{
         "gnb": [
-        { "name": "이벤트", "cls": "li-event", "href": "#eve" },
-        { "name": "사전예약 신청", "cls": "li-res", "href": "#form-all" },
-        { "name": "오시는 길", "cls": "li-way", "href": "#waywrap" }
+        { "name": "이벤트", "cls": "li-event", "href": "eve" },
+        { "name": "사전예약 신청", "cls": "li-res", "href": "form-all" },
+        { "name": "오시는 길", "cls": "li-way", "href": "waybox" }
         ],
         "c_gnb":[
         { "name": "이벤트", "cls": "li-event", "href": "#eve" },
         { "name": "사전예약 신청", "cls": "li-res", "href": "#form-all" },
-        { "name": "오시는 길", "cls": "li-way", "href": "#waywrap" }
+        { "name": "오시는 길", "cls": "li-way", "href": "#waybox" }
         ]
     },
     "eventdb" : {
@@ -19,16 +19,19 @@
                 "img1":"./asset/btn_ytb.png",
                 "alt1":"유튜브 아이콘",
                 "content11":"유튜브",
+                "c-cls1":"content11",
                 "content12":"바로가기",
                 "href2":"https://www.instagram.com/rrace/",
                 "cls2":"i-ins",
                 "img2":"./asset/btn_instar.png",
                 "alt2":"인스타 아이콘",
                 "content21":"인스타",
+                "c-cls2":"content21",
                 "content22":"바로가기"}
             ],
         
-        "Event" : [{"title1":"나얼이 들려주는", 
+        "Event" : [
+               {"title1":"나얼이 들려주는", 
                   "title2":"아날로그",
                   "txt1":"오늘 하루는 스마트폰을 놓고 아날로그의 매력에 빠져보세요!",
                   "txt2":"독보적인 뮤지션 나얼이 감성 가득한 곡들을 선별해 들려드립니다.",
@@ -51,7 +54,7 @@
                   "in_img" : "./asset/in_img2.png"
                 },
                   {"title1":"독보적인 뮤지션", 
-                  "title2":" 나얼",
+                  "title2":"나얼",
                   "txt1":"· 2005년, 리메이크 앨범 < Back To The Soul Flight > 발매",
                   "txt2":"· 2012년, 솔로정규 1집 < Principle of my Soul > 발매",
                   "txt3":"· 2015년,  < 브라운 아이드 소울 싱글 프로젝트 1st. > 발매",
@@ -61,8 +64,29 @@
                   "cls":"event-box2",                  
                   "in_img" : "./asset/in_img3.png"}
 
-                  ]
-      
-    }
+                  ],
+        "wayinfo":[
+                  {"src":"./asset/bus.svg", "icls":"title", "c1cls":"content1", "c2cls":"content2", "alt":"버스 아이콘", "title":"버스", "txt1":"수인분당선 서현역 6번 출구 정일빌딩 동그라미펍", "txt2":"(500M 이내 위치)"},
+                  {"src":"./asset/subway.svg", "icls":"title", "c1cls":"content1", "c2cls":"content2", "alt":"지하철 아이콘", "title":"지하철", "txt1":"17, 17-1, 33, 720-1, 380, 승차 후 서현역 AK프라자", "txt2":"정류장에서 하차"},
+                  {"src":"./asset/parking.svg", "icls":"title", "c1cls":"content1", "c2cls":"content2", "alt":"주차장 아이콘", "title":"주차안내", "txt1":"빌딩 근처에 주차공간이 협소하오니 가급적 대중교통", "txt2":"이용바랍니다. (주차2시간 무료)"} 
+                ]
+            },
 
+    "info" : {
+      "mydb":
+      [{"title":"대표자명 :", "content":" 김채연", "cls":"ceo"},
+          {"title":"사업자등록번호 :", "content":" 000-00-0000", "cls":"addnum"},
+          {"title":"문의전화 :", "content":" 000-000-0000" , "cls":"phone"},
+          {"title":"이메일 :", "content":" Help@recozy.com" , "cls":"email"}],
+      "menudb":
+      [{"menu":"이용약관", "href":"#agreepg", "cls":"agree"}, 
+      {"menu":"개인정보처리방침", "href":"#personalpg", "cls":"personal"}, 
+      {"menu":"이메일무단수집거부","href":"#noemailpg", "cls":"noemail"} ],
+      "quick":[
+        {"id":"btn1", "cls":"symbol", "href":"https://kcy230426.github.io/recozy/", "img":"./asset/symbol.svg", "alt":"포트폴리오 사이트 링크", "target":"_blank", "spancls":"hidetitle", "content":"Click"},
+        {"id":"btn2", "cls":"kakao", "href":"https://www.kakaocorp.com/page/service/service/KakaoTalk", "img":"./asset/kakao.png", "alt":"카카오 채널 링크", "target":"_blank", "spancls":"hidetitle", "content":"Click"},
+        {"id":"btn3", "cls":"instar", "href":"https://github.com/kcy230426", "img":"./asset/git.png", "alt":"깃허브 링크", "target":"_blank", "spancls":"hidetitle", "content":"Click"},
+        {"id":"btn4", "cls":"arrow", "href":"#ft", "img":"./asset/b_arrow.svg", "alt":"하단 이동", "target":"_self", "spancls":"", "content":""}]
+
+    }
   }

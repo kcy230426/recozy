@@ -12,8 +12,8 @@ function App() {
   return (
     <>
     <Hd dbpath={db.nav} ></Hd>
-    <Content  dbpath={db.eventdb}></Content>
-    <Ft></Ft>
+    <Content dbpath={db.eventdb}></Content>
+    <Ft dbpath={db.info}></Ft>
     </>
   );
 }

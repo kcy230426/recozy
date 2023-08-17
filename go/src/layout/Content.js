@@ -9,7 +9,7 @@ return(
     <Banner/>
     <Event dbpath={props.dbpath} />
     <Form/>
-    <Way/>
+    <Way dbpath={props.dbpath}/>
     </>
 )
 }

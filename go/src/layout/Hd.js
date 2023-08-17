@@ -1,7 +1,8 @@
 import './../scss/my.scss';
 import logo from '../asset/logo.svg';
 import React, { useEffect, useState } from 'react';
-import { Scrollspy } from 'react-scrollspy';
+import Scrollspy from 'react-scrollspy';
+
 
 
 
@@ -11,11 +12,15 @@ const Hd = (props) => {
   const [activeIndex, setActiveIndex] = useState(null);
   const [ openmobile, setOpen ] = useState(false)
 
+  const scrollspyItems = ['eve', 'form-all', 'waybox'];
+
+
+
   const handleGnbClick = (index) => {
     setActiveIndex(index);
   };
 
-  const ScrollSpyExample = () => {
+
     useEffect(() => {
       const handleScroll = () => {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -33,37 +38,51 @@ const Hd = (props) => {
       return () => {
         window.removeEventListener('scroll', handleScroll);
       };
+
     }, []);
 
-    return null; // 렌더링할 내용이 없으므로 null을 반환합니다.
-  };
+
 
   return (
     <div className='fixed-top '>
-       <ScrollSpyExample />
+       {/* <ScrollSpyExample /> */}
       <div id="ad-title">
         <span className='d-none d-md-inline'>사전예약 신청시</span> 추첨을 통해 사이드메뉴 무료교환권을 드립니다.
       </div>
+      
       <header id="wrap" >
         <div id="tab" className="container-md d-lg-flex justify-content-between align-items-center position-relative">
           
-          <h1 id="logobox" className='text-center flex-grow-1 text-lg-start'>
+          <h1 id="logobox" className='text-center flex-grow-1 kcy-text-lg-start'>
             <a href="#banner">
               <img src={logo} alt="로고" />
             </a>
           </h1>
           <button id='listbtn' onClick={ () => { setOpen(!openmobile) } } className={ openmobile ? "open" : ""} ><i class="bi bi-list"></i></button>
-          <ul id="gnb" className={`d-flex justify-content-center `}>
+         
+   
+       
+          <div id="gnb" className={``}>
+          <Scrollspy
+          items={scrollspyItems}
+          currentClassName="active" // Customize the class name for the active item
+          offset={-100}
+          scrollDuration={500}
+          className={`d-flex justify-content-center mb-0`}
+          
+        >
             {nav.gnb.map((x, i) => (
               <li
                 key={i}
-                className={`${activeIndex === i ? 'active' : ''} ${x.cls}`}
+                className={`${x.cls}`}
                 onClick={() => handleGnbClick(i)}
               >
-                <a href={x.href}>{x.name}</a>
+                <a href={'#'+x.href}>{x.name}</a>
               </li>
             ))}
-          </ul>
+            </Scrollspy>
+          </div>
+          
           {/* <ul id="clickgnb" className={`d-flex justify-content-center`}>
             {nav.gnb.map((x, i) => (
               <li

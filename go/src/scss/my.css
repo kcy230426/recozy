@@ -24,8 +24,16 @@ p {
   }
 }
 @media (max-width: 1000px) {
+  #listbtn.open + #gnb {
+    height: 70px !important;
+    border-radius: 0 0 35px 35px;
+  }
   .md-block {
     display: block;
+  }
+  #gnb > ul > li {
+    display: flex !important;
+    padding: 22px 40px !important;
   }
 }
 @media (max-width: 486px) {
@@ -44,11 +52,14 @@ p {
     height: 50px !important;
     border-radius: 100%;
   }
-  .hidetitle1, .hidetitle2, .hidetitle3 {
+  .hidetitle {
     font-size: 10pt !important;
   }
-  #arrow img {
+  #quick .arrow {
     width: 50px !important;
+  }
+  #quick #btn4 {
+    margin-bottom: 20px;
   }
   #ft #quick #btn1 .symbol, #ft #quick #btn2 .kakao, #ft #quick #btn3 .instar {
     width: 30px !important;
@@ -64,8 +75,6 @@ p {
   #banner .textbox {
     font-family: "Gowun Batang" !important;
     position: absolute !important;
-    top: 40% !important;
-    left: 14% !important;
     color: white !important;
   }
   .textbox h3 {
@@ -116,24 +125,16 @@ p {
   z-index: 999;
 }
 
-.ytb-a:hover {
-  background: red;
-  opacity: 0.8;
-}
-
-.ins-a:hover {
-  background: rgba(124, 38, 221, 0.2470588235) !important;
-  background-blend-mode: screen;
-}
-
 .ytb-a:hover .i-info1 {
-  display: flex;
+  display: block;
   color: white;
+  mix-blend-mode: screen;
 }
 
 .ins-a:hover .i-info2 {
   display: block;
   color: white;
+  mix-blend-mode: screen;
 }
 
 .snsicon {
@@ -155,8 +156,13 @@ p {
     display: flex;
     margin-bottom: 20px;
   }
+  .snsicon .ytb-a, .snsicon .ins-a {
+    width: 60px;
+    height: 60px;
+  }
   .snsicon img {
-    width: 50px !important;
+    width: 40px !important;
+    height: auto !important;
   }
   #form-group .sm-wrap {
     display: flex !important;
@@ -242,6 +248,24 @@ p {
   background: radial-gradient(circle farthest-corner at 32% 106%, #ffe17d 0%, #ffcd69 10%, #fa9137 28%, #eb4141 42%, transparent 82%), linear-gradient(135deg, #234bd7 12%, #c33cbe 58%);
 }
 
+.ytb-a:hover {
+  mix-blend-mode: normal;
+  background-color: rgba(148, 6, 6, 0.692);
+}
+
+.ytb-a:hover img {
+  opacity: 0.5;
+}
+
+.ins-a:hover img {
+  opacity: 0.5;
+}
+
+.ins-a:hover {
+  mix-blend-mode: normal;
+  background: rgba(193, 145, 255, 0.411);
+}
+
 .snsicon .i-ytb {
   height: 38px;
 }
@@ -297,13 +321,6 @@ a:hover {
     animation-duration: 0.2s;
     padding: 0 !important;
     transition: 0.2s;
-  }
-  #gnb li {
-    padding: 30px 20px !important;
-  }
-  #listbtn.open + #gnb {
-    height: 70px !important;
-    border-radius: 0 0 35px 35px;
   }
   #tab h1 {
     padding: 30px 0;
@@ -413,6 +430,9 @@ a:hover {
   }
 }
 @media (max-width: 486px) {
+  .i-info1, .i-info2 {
+    display: none !important;
+  }
   #form-group #label2 li {
     padding: 20px;
   }
@@ -426,12 +446,11 @@ a:hover {
   .sm-block {
     display: block !important;
   }
-  #listbtn.open + #gnb {
-    height: 70px !important;
-    border-radius: 0 0 35px 35px;
-  }
 }
 @media (min-width: 1001px) {
+  .kcy-text-lg-start {
+    text-align: left !important;
+  }
   #listbtn {
     display: none;
   }
@@ -440,10 +459,6 @@ a:hover {
   }
 }
 @media (min-width: 768px) {
-  #listbtn.open + #gnb {
-    height: 86px !important;
-    border-radius: 0 0 35px 35px;
-  }
   #form_ {
     margin-top: -50px;
   }
@@ -525,7 +540,7 @@ a:hover {
   left: 50%; /* 시작점을 가운데로 설정합니다. */
   background-color: #F1605F;
   width: 0;
-  height: 5px;
+  height: 4px;
   transition: 0.3s;
   animation-name: expand;
   animation-direction: alternate; /* 애니메이션의 방향을 번갈아가며 재생합니다. */
@@ -539,7 +554,7 @@ a:hover {
   bottom: 0;
   background-color: #F1605F;
   width: 100%;
-  height: 5px;
+  height: 4px;
 }
 
 @keyframes expand {
@@ -685,6 +700,7 @@ body.on #banner {
 }
 #eve #ulbox .swiper-slide [class^=e_bg] ul .event-box .spot, #eve #ulbox .swiper-slide [class^=e_bg] ul .event-box2 .spot, #eve #ulbox .swiper-slide [class^=e_bg] ul .event-box3 .spot {
   letter-spacing: -2px;
+  margin-left: 8px;
   font-family: "Gowun Batang", serif;
   font-size: 35pt;
 }
@@ -750,7 +766,7 @@ body.on #banner {
   align-items: center;
 }
 #ft #quick #btn1 .symbol {
-  height: 50px;
+  height: 60px;
 }
 #ft #quick #btn2 {
   background-color: #f8df00;
@@ -759,16 +775,23 @@ body.on #banner {
   align-items: center;
 }
 #ft #quick #btn2 .kakao {
-  width: 50px;
+  width: 54px;
 }
 #ft #quick #btn3 {
-  background: radial-gradient(circle farthest-corner at 32% 106%, #ffe17d 0%, #ffcd69 10%, #fa9137 28%, #eb4141 42%, transparent 82%), linear-gradient(135deg, #234bd7 12%, #c33cbe 58%);
+  background: rgb(88, 88, 88);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 #ft #quick #btn3 .instar {
-  width: 45px;
+  width: 50px;
+}
+#ft #quick #btn4 {
+  margin-top: 10px;
+}
+#ft #quick #btn4 a {
+  display: flex;
+  justify-content: center;
 }
 
 /* 타이틀 - Gowun Batang */
@@ -1004,7 +1027,7 @@ input {
   padding-top: 80px;
   margin-bottom: 80px;
 }
-#waybox #waywrap .title span {
+#waybox #waywrap #mapinfo span {
   font-size: 20pt;
   letter-spacing: -0.3px;
   font-weight: 500;
@@ -1033,7 +1056,7 @@ input {
 }
 
 #quick #btn3:hover {
-  background: rgba(124, 38, 221, 0.2470588235) !important;
+  background-color: rgba(136, 138, 143, 0.7450980392) !important;
 }
 
 #quick #btn1:hover .symbol,
@@ -1046,13 +1069,13 @@ input {
   position: relative;
 }
 
-.hidetitle1, .hidetitle2, .hidetitle3 {
+.hidetitle {
   display: none;
 }
 
-#quick #btn1:hover .hidetitle1,
-#quick #btn2:hover .hidetitle2,
-#quick #btn3:hover .hidetitle3 {
+#quick #btn1:hover .hidetitle,
+#quick #btn2:hover .hidetitle,
+#quick #btn3:hover .hidetitle {
   display: inline;
   position: absolute;
   font-weight: 400;
