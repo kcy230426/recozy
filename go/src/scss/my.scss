@@ -124,18 +124,57 @@ p{
     margin-left: 40px;
 }
 
-.i-ytb:hover, .i-ins:hover{
-    opacity: 0.7;
-}
+
+// .ytb-a{
+//     background-image: url('../../public/asset/btn_ytb.png');
+//     background-size: 56px;
+//     background-repeat: no-repeat;
+//     background-position: center;
+// }
 
 
-
-.i-info1{
+.i-info1, .i-info2{
+    display: none;
     position: absolute;
     left: 50%;
     top: 50%;
+    font-size: 8pt;
     transform: translate(-50%, -50%);
-    font-size: 7pt;
+    z-index: 999;
+}
+
+.ytb-a:hover{
+    background: red;
+    opacity: 0.8;
+}
+
+.ins-a:hover{
+    background: #7c26dd3f !important;
+    background-blend-mode: screen;
+}
+
+.ytb-a:hover .i-info1{
+    display: flex;
+    color: white;
+}
+
+.ins-a:hover .i-info2{
+    display: block;
+    color: white;
+}
+
+.snsicon{
+    display: flex;
+}
+
+.snsicon .ytb-a{
+    margin-right: 10px;
+}
+
+.ytb-a, .ins-a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media(max-width:486px){
@@ -144,7 +183,7 @@ p{
         display: flex;
         margin-bottom: 20px;
         img{
-            height: 56px !important;
+            width: 50px !important;
         }
 
     }
@@ -225,11 +264,31 @@ p{
     margin: 0;
 }
 
+.ytb-a{
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    border-radius: 100%;
+}
+
+.ytb-a{
+    background-color: red;
+}
+
+.ins-a{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background: radial-gradient(circle farthest-corner at 32% 106%,#ffe17d 0%,#ffcd69 10%,#fa9137 28%,#eb4141 42%,transparent 82%) , linear-gradient(135deg,#234bd7 12%,#c33cbe 58%);
+}
 
 
-.snsicon img{
-    height: 70px;
-    margin-right: 8px;
+.snsicon .i-ytb{
+    height: 38px;
+}
+
+.snsicon .i-ins{
+    height: 46px;
 }
 
 .newcontainer{
@@ -623,9 +682,11 @@ a:hover{
     margin-top: 0 !important;
     background-color: white;
 }
-
-.on #ad-title{
-    height: 0;
+.fixed-top{
+    transition: 0.5s;
+}
+.on .fixed-top{
+    margin-top:-48px
 }
 
 #ad-title{
@@ -635,7 +696,7 @@ a:hover{
 }
 
 #wrap{
-    margin-top: 48px;
+   
     background-color: white;
     
     #tab{
@@ -786,7 +847,7 @@ body.on #banner{
                         }
                         div{
                             margin-top: 4px;
-                            font-size: 15pt;
+                            font-size: 14pt;
                         }
                     }
                 }

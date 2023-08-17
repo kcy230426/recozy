@@ -5,20 +5,8 @@ import { Scrollspy } from 'react-scrollspy';
 
 
 
-const Hd = () => {
-  const nav = {
-    gnb: [
-      { name: '이벤트', cls: 'li-event', href: '#eve' },
-      { name: '사전예약 신청', cls: 'li-res', href: '#form-all' },
-      { name: '오시는 길', cls: 'li-way', href: '#waywrap' }
-    ],
-    c_gnb:[
-      { name: '이벤트', cls: 'li-event', href: '#eve' },
-      { name: '사전예약 신청', cls: 'li-res', href: '#form-all' },
-      { name: '오시는 길', cls: 'li-way', href: '#waywrap' }
-    ]
-    // c_gnb는 없어도 될듯한?
-  };
+const Hd = (props) => {
+  const nav = props.dbpath;
 
   const [activeIndex, setActiveIndex] = useState(null);
   const [ openmobile, setOpen ] = useState(false)
@@ -51,12 +39,12 @@ const Hd = () => {
   };
 
   return (
-    <div>
+    <div className='fixed-top '>
        <ScrollSpyExample />
       <div id="ad-title">
         <span className='d-none d-md-inline'>사전예약 신청시</span> 추첨을 통해 사이드메뉴 무료교환권을 드립니다.
       </div>
-      <header id="wrap" className='fixed-top '>
+      <header id="wrap" >
         <div id="tab" className="container-md d-lg-flex justify-content-between align-items-center position-relative">
           
           <h1 id="logobox" className='text-center flex-grow-1 text-lg-start'>

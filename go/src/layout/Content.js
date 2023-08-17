@@ -3,11 +3,11 @@ import Event from './../component/Event'
 import Form from './../component/Form'
 import Way from './../component/Way'
 
-const Content = () => {
+const Content = (props) => {
 return(
     <>
     <Banner/>
-    <Event/>
+    <Event dbpath={props.dbpath} />
     <Form/>
     <Way/>
     </>
