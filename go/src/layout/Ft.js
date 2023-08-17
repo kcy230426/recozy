@@ -12,7 +12,7 @@ const Ft = (props) => {
         <footer id="ft">
             <div id="f-wrap" className='container d-lg-flex justify-content-between align-items-center'> 
             <h3><img src={f_logo} alt="하단 로고" /></h3>
-            <ul className='fnb'>
+            <ul className='fnb mb0'>
                 <div className='d-md-flex justify-content-center'>
                 {
                     info.mydb.map((v,i)=>{

@@ -20,10 +20,10 @@ const Event = (props) => {
                     spaceBetween={0}
                     slidesPerView={1}
                     pagination={{ clickable: true }}
-                    //autoplay={{
-                      //  delay: 5000,
-                        //disableOnInteraction: false,
-                      //}}
+                    autoplay={{
+                       delay: 8000,
+                        disableOnInteraction: false,
+                      }}
                     modules={[Autoplay, Pagination]}
                     >
                         {

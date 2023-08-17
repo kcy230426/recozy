@@ -24,6 +24,23 @@ p {
   }
 }
 @media (max-width: 1000px) {
+  #form-group .nametag {
+    margin-left: 70px;
+  }
+  #label2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #ft {
+    height: 340px !important;
+  }
+  #f-wrap {
+    padding-top: 30px;
+  }
+  #f-wrap {
+    text-align: center;
+  }
   #listbtn.open + #gnb {
     height: 70px !important;
     border-radius: 0 0 35px 35px;
@@ -48,8 +65,8 @@ p {
     right: -20px !important;
   }
   #ft #quick li {
-    width: 50px !important;
-    height: 50px !important;
+    width: 60px !important;
+    height: 60px !important;
     border-radius: 100%;
   }
   .hidetitle {
@@ -62,7 +79,7 @@ p {
     margin-bottom: 20px;
   }
   #ft #quick #btn1 .symbol, #ft #quick #btn2 .kakao, #ft #quick #btn3 .instar {
-    width: 30px !important;
+    width: 34px !important;
   }
   .agree-btn {
     text-align: center;
@@ -77,9 +94,6 @@ p {
     position: absolute !important;
     color: white !important;
   }
-  .textbox h3 {
-    font-size: 20pt !important;
-  }
   #form-group #label2 li {
     margin-bottom: 10px !important;
   }
@@ -90,7 +104,7 @@ p {
     padding: 10px;
   }
   #label2 span {
-    font-size: 12pt !important;
+    font-size: 10pt !important;
   }
   #gendername {
     margin: 0 !important;
@@ -157,11 +171,11 @@ p {
     margin-bottom: 20px;
   }
   .snsicon .ytb-a, .snsicon .ins-a {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
   }
   .snsicon img {
-    width: 40px !important;
+    width: 30px !important;
     height: auto !important;
   }
   #form-group .sm-wrap {
@@ -201,10 +215,6 @@ p {
   }
   #gnb .li-event, #gnb .li-res, #gnb .li-way {
     padding: 25px !important;
-  }
-  #listbtn.open + #gnb {
-    height: auto !important;
-    border-radius: 0 0 35px 35px;
   }
 }
 .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
@@ -322,18 +332,27 @@ a:hover {
     padding: 0 !important;
     transition: 0.2s;
   }
+  #waybox h2 {
+    font-size: 24pt !important;
+  }
+  #form-group {
+    margin-top: 20px !important;
+  }
+  #waywrap {
+    padding-top: 25px !important;
+  }
   #tab h1 {
     padding: 30px 0;
   }
   .textbox h3 {
-    font-size: 22pt !important;
+    font-size: 20pt !important;
     letter-spacing: -3px !important;
   }
   .textbox h3 span {
-    height: 40px !important;
+    height: 36px !important;
   }
   .textbox p {
-    font-size: 13pt !important;
+    font-size: 11pt !important;
     letter-spacing: -2.5px;
     margin-top: -10px;
   }
@@ -430,6 +449,9 @@ a:hover {
   }
 }
 @media (max-width: 486px) {
+  #wrap #tab h1 img {
+    width: 140px !important;
+  }
   .i-info1, .i-info2 {
     display: none !important;
   }
@@ -438,10 +460,6 @@ a:hover {
   }
   #banner .textbox h3 {
     text-align: center;
-  }
-  #banner .textbox p {
-    font-size: 12pt !important;
-    text-align: center !important;
   }
   .sm-block {
     display: block !important;
@@ -462,26 +480,20 @@ a:hover {
   #form_ {
     margin-top: -50px;
   }
-}
-@media (max-width: 1000px) {
-  #waybox #waywrap img {
-    margin-bottom: 50px;
-  }
   #ft {
-    height: 340px !important;
+    height: 260px !important;
   }
+}
+@media (min-width: 1024px) {
+  #ft {
+    height: 130px !important;
+  }
+}
+@media (max-width: 768px) {
   #f-wrap {
     text-align: center;
     padding-top: 30px;
     justify-content: center;
-  }
-  #form-group .nametag {
-    margin-left: 70px;
-  }
-  #label2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
   #mapinfo {
     display: flex;
@@ -505,17 +517,8 @@ a:hover {
   }
 }
 @media (max-width: 767px) {
-  #waybox #waywrap img {
-    margin-bottom: 50px;
-  }
-  #ft {
+  #waybox #ft {
     height: 340px !important;
-  }
-  #f-wrap {
-    padding-top: 30px;
-  }
-  #f-wrap {
-    text-align: center;
   }
   #form-title {
     font-size: 32pt !important;
@@ -591,7 +594,7 @@ a:hover {
   background-color: transparent;
   border: 0;
   position: absolute;
-  font-size: 33pt;
+  font-size: 28pt;
   top: 50%;
   padding-left: 10px;
   transform: translateY(-50%);
