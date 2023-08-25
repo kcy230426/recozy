@@ -86,7 +86,7 @@
         {"id":"btn1", "cls":"symbol", "href":"https://kcy230426.github.io/recozy/", "img":"./asset/symbol.svg", "alt":"포트폴리오 사이트 링크", "target":"_blank", "spancls":"hidetitle", "content":"Click"},
         {"id":"btn2", "cls":"kakao", "href":"https://www.kakaocorp.com/page/service/service/KakaoTalk", "img":"./asset/kakao.png", "alt":"카카오 채널 링크", "target":"_blank", "spancls":"hidetitle", "content":"Click"},
         {"id":"btn3", "cls":"instar", "href":"https://github.com/kcy230426", "img":"./asset/git.png", "alt":"깃허브 링크", "target":"_blank", "spancls":"hidetitle", "content":"Click"},
-        {"id":"btn4", "cls":"arrow", "href":"#ft", "img":"./asset/b_arrow.svg", "alt":"하단 이동", "target":"_self", "spancls":"", "content":""}]
+        {"id":"btn4", "cls":"arrow", "href":"#f-wrap", "img":"./asset/b_arrow.svg", "alt":"하단 이동", "target":"_self", "spancls":"", "content":""}]
 
     }
   }

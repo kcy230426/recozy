@@ -3,6 +3,7 @@ import symbol from './../asset/symbol.svg'
 import kakao from './../asset/kakao.png'
 import instar from './../asset/instar.png'
 import b_arrow from './../asset/b_arrow.svg'
+import React, { useState, useEffect } from 'react';
 
 const Ft = (props) => {
     const info = props.dbpath;

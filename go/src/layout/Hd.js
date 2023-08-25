@@ -2,6 +2,7 @@ import './../scss/my.scss';
 import logo from '../asset/logo.svg';
 import React, { useEffect, useState } from 'react';
 import Scrollspy from 'react-scrollspy';
+import throttle from 'lodash/throttle'
 
 
 
@@ -26,7 +27,7 @@ const Hd = (props) => {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         const body = document.querySelector('body');
         const threshold = 10; // 스크롤을 얼마나 내려야 클래스가 추가되는지 조정 가능
-
+        
         if (scrollTop > threshold) {
           body.classList.add('on');
         } else {
@@ -34,9 +35,11 @@ const Hd = (props) => {
         }
       };
 
-      window.addEventListener('scroll', handleScroll);
+      const throttledHandleScroll = throttle(handleScroll, 100);
+
+      window.addEventListener('scroll', throttledHandleScroll);
       return () => {
-        window.removeEventListener('scroll', handleScroll);
+        window.removeEventListener('scroll', throttledHandleScroll);
       };
 
     }, []);
