@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/recozy/static/css/main.5962092d.css",
-    "main.js": "/recozy/static/js/main.292db12c.js",
+    "main.js": "/recozy/static/js/main.bf0ebe2f.js",
     "static/js/787.b9853e33.chunk.js": "/recozy/static/js/787.b9853e33.chunk.js",
     "static/media/left_img.png": "/recozy/static/media/left_img.4c5bda901614b249028a.png",
     "static/media/form_bg.jpg": "/recozy/static/media/form_bg.a80dd38f9954845144ab.jpg",
@@ -22,15 +22,15 @@
     "static/media/f_logo.svg": "/recozy/static/media/f_logo.c4eae6f1bbd48b8cc72c5f45ed3ff698.svg",
     "static/media/logo.svg": "/recozy/static/media/logo.c7b7ad1a4cbc8cd31de59a40d7c99d90.svg",
     "index.html": "/recozy/index.html",
-    "static/media/b_arrow.svg": "/recozy/static/media/b_arrow.26049b6728afe65d13b35751d3d8cd67.svg",
+    "static/media/b_arrow.svg": "/recozy/static/media/b_arrow.b27292c1a62c3869856edae9c4b78839.svg",
     "static/media/symbol.svg": "/recozy/static/media/symbol.d552dee5c820fcafdeecd311e3b6d6ee.svg",
-    "static/media/line.svg": "/recozy/static/media/line.179c3452090a213b52f29a3619ea6ed3.svg",
+    "static/media/line.svg": "/recozy/static/media/line.60926b57b9a0d0f60884c4c0b93c40fa.svg",
     "main.5962092d.css.map": "/recozy/static/css/main.5962092d.css.map",
-    "main.292db12c.js.map": "/recozy/static/js/main.292db12c.js.map",
+    "main.bf0ebe2f.js.map": "/recozy/static/js/main.bf0ebe2f.js.map",
     "787.b9853e33.chunk.js.map": "/recozy/static/js/787.b9853e33.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5962092d.css",
-    "static/js/main.292db12c.js"
+    "static/js/main.bf0ebe2f.js"
   ]
 }
