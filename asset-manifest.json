@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/recozy/static/css/main.5962092d.css",
-    "main.js": "/recozy/static/js/main.a744f8a2.js",
+    "main.js": "/recozy/static/js/main.fbdd2256.js",
     "static/js/787.b9853e33.chunk.js": "/recozy/static/js/787.b9853e33.chunk.js",
     "static/media/left_img.png": "/recozy/static/media/left_img.4c5bda901614b249028a.png",
     "static/media/form_bg.jpg": "/recozy/static/media/form_bg.a80dd38f9954845144ab.jpg",
@@ -26,11 +26,11 @@
     "static/media/symbol.svg": "/recozy/static/media/symbol.d552dee5c820fcafdeecd311e3b6d6ee.svg",
     "static/media/line.svg": "/recozy/static/media/line.179c3452090a213b52f29a3619ea6ed3.svg",
     "main.5962092d.css.map": "/recozy/static/css/main.5962092d.css.map",
-    "main.a744f8a2.js.map": "/recozy/static/js/main.a744f8a2.js.map",
+    "main.fbdd2256.js.map": "/recozy/static/js/main.fbdd2256.js.map",
     "787.b9853e33.chunk.js.map": "/recozy/static/js/787.b9853e33.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5962092d.css",
-    "static/js/main.a744f8a2.js"
+    "static/js/main.fbdd2256.js"
   ]
 }
