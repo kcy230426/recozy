@@ -1,14 +1,9 @@
 {
     "nav" :{
         "gnb": [
-        { "name": "이벤트", "cls": "li-event", "href": "eve" },
-        { "name": "사전예약 신청", "cls": "li-res", "href": "form-all" },
-        { "name": "오시는 길", "cls": "li-way", "href": "waybox" }
-        ],
-        "c_gnb":[
-        { "name": "이벤트", "cls": "li-event", "href": "#eve" },
-        { "name": "사전예약 신청", "cls": "li-res", "href": "#form-all" },
-        { "name": "오시는 길", "cls": "li-way", "href": "#waybox" }
+        { "titlename": "이벤트", "cls": "li-event", "href": "eve" },
+        { "titlename": "사전예약 신청", "cls": "li-res", "href": "form-all" },
+        { "titlename": "오시는 길", "cls": "li-way", "href": "waybox" }
         ]
     },
     "eventdb" : {
@@ -19,14 +14,14 @@
                 "img1":"./asset/btn_ytb.png",
                 "alt1":"유튜브 아이콘",
                 "content11":"유튜브",
-                "c-cls1":"content11",
+                "ccls1":"content11",
                 "content12":"바로가기",
                 "href2":"https://www.instagram.com/rrace/",
                 "cls2":"i-ins",
                 "img2":"./asset/btn_instar.png",
                 "alt2":"인스타 아이콘",
                 "content21":"인스타",
-                "c-cls2":"content21",
+                "ccls2":"content21",
                 "content22":"바로가기"}
             ],
         

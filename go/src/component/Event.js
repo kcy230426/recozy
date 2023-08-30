@@ -49,13 +49,13 @@ const Event = (props) => {
                                                     <div class="snsicon">
                                                         <a href={v.href1} className='ytb-a rel' target='_blank'>
                                                             <div class="i-info1 text-center">
-                                                                <span className='c-cls1'>{v.content11}</span><span class="d-block">{v.content12}</span>
+                                                                <span className='ccls1'>{v.content11}</span><span class="d-block">{v.content12}</span>
                                                             </div>
                                                             <img src={v.img1} class={v.cls1} alt={v.alt1} />
                                                         </a>
                                                         <a href={v.href2} className='ins-a rel' target='_blank'>
                                                             <div class="i-info2 text-center">
-                                                                <span className='c-cls2'>{v.content21}</span><span class="d-block">{v.content22}</span>
+                                                                <span className='ccls2'>{v.content21}</span><span class="d-block">{v.content22}</span>
                                                             </div>
                                                             <img src={v.img2} class={v.cls2} alt={v.alt2} />
                                                         </a>

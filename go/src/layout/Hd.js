@@ -80,7 +80,7 @@ const Hd = (props) => {
                 className={`${x.cls}`}
                 onClick={() => handleGnbClick(i)}
               >
-                <a href={'#'+x.href}>{x.name}</a>
+                <a href={'#'+x.href}>{x.titlename}</a>
               </li>
             ))}
             </Scrollspy>
