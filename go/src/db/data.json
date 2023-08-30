@@ -35,7 +35,7 @@
                   "txt5":"",
                   "txt6":"",
                   "cls":"event-box",
-                  "in_img" : "./asset/in_img1.png"
+                  "inimg" : "./asset/in_img1.png"
                 },
                   {"title1":"독보적인 뮤지션", 
                   "title2":"나얼",
@@ -46,7 +46,7 @@
                   "txt5":"다양한 음악을 추천해주는 플레이스트와 LP 디제잉 제공중",
                   "txt6":"",
                   "cls":"event-box2",                  
-                  "in_img" : "./asset/in_img2.png"
+                  "inimg" : "./asset/in_img2.png"
                 },
                   {"title1":"독보적인 뮤지션", 
                   "title2":"나얼",
@@ -57,7 +57,7 @@
                   "txt5":"· 2018년, < Sound Doctrine> 발매",
                   "txt6":"· 2023년, < Soul Pop City > 발매 / < 걸음을 멈추는 날 > 공개",
                   "cls":"event-box2",                  
-                  "in_img" : "./asset/in_img3.png"}
+                  "inimg" : "./asset/in_img3.png"}
 
                   ],
         "wayinfo":[
