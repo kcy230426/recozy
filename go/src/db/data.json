@@ -61,8 +61,8 @@
 
                   ],
         "wayinfo":[
-                  {"src":"./asset/bus.svg", "icls":"title", "c1cls":"content1", "c2cls":"content2", "alt":"버스 아이콘", "title":"버스", "txt1":"수인분당선 서현역 6번 출구 정일빌딩 동그라미펍", "txt2":"(500M 이내 위치)"},
-                  {"src":"./asset/subway.svg", "icls":"title", "c1cls":"content1", "c2cls":"content2", "alt":"지하철 아이콘", "title":"지하철", "txt1":"17, 17-1, 33, 720-1, 380, 승차 후 서현역 AK프라자", "txt2":"정류장에서 하차"},
+                  {"src":"./asset/bus.svg", "icls":"title", "c1cls":"content1", "c2cls":"content2", "alt":"버스 아이콘", "title":"버스", "txt1":"17, 17-1, 33, 720-1, 380, 승차 후 서현역 AK프라자 하차", "txt2":"정류장에서 하차"},
+                  {"src":"./asset/subway.svg", "icls":"title", "c1cls":"content1", "c2cls":"content2", "alt":"지하철 아이콘", "title":"지하철", "txt1":"수인분당선 서현역 6번 출구 정일빌딩 동그라미펍", "txt2":"(500M 이내 위치)"},
                   {"src":"./asset/parking.svg", "icls":"title", "c1cls":"content1", "c2cls":"content2", "alt":"주차장 아이콘", "title":"주차안내", "txt1":"빌딩 근처에 주차공간이 협소하오니 가급적 대중교통", "txt2":"이용바랍니다. (주차2시간 무료)"} 
                 ]
             },
