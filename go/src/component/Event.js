@@ -31,7 +31,7 @@ const Event = (props) => {
                             return(
                                 <SwiperSlide>
                                     <div className={`e_bg${idx + 1} w-100 d-flex flex-column flex-lg-row align-items-center justify-content-between`}>
-                                        <img src={v.in_img} alt="슬라이드 이미지1" className='imgs img-fluid order-1' />
+                                        <img src={v.inimg} alt="슬라이드 이미지1" className='imgs img-fluid order-1' />
                                         <ul className='order-0'>
                                            
                                                         <li className={v.cls}><span className="title">{v.title1}</span><span className="spot">{v.title2}</span>
