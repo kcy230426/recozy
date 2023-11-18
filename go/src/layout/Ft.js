@@ -40,7 +40,7 @@ const Ft = (props) => {
                         {
                             info.quick.map((v,i)=>{
                                 return(
-                                    <li id={v.id} className='rel'><a href={v.href} target={v.target}><img src={v.img} alt={v.alt} className={v.cls} /><span className={v.spancls}>{v.content}</span></a></li>
+                                    <li id={`btn${v.id}`} className='rel'><a href={v.href} target={v.target}><img src={v.img} alt={v.alt} className={v.cls} /><span className={v.spancls}>{v.content}</span></a></li>
                                 )
                             })
                         }
