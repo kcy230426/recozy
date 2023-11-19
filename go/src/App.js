@@ -2,8 +2,6 @@ import 'bootstrap/dist/css/bootstrap.css'
 import Hd from './layout/Hd'
 import Ft from './layout/Ft'
 import Content from './layout/Content'
-import Form from './component/Form'
-
 import db from './db/data.json'
 
 

@@ -20,7 +20,7 @@ const Way = (props) =>{
                     {
                         locate.wayinfo.map((v,idx)=>{
                             return(
-                                <ul className="text-left">
+                                <ul key={idx} className="text-left">
                                 <li className={v.cls}><img src={v.src} alt={v.alt}/><span>{v.title}</span></li>
                                 <li className={v.c1cls}>{v.txt1}</li>
                                 <li className={v.c2cls}>{v.txt2}</li>

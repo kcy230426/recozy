@@ -9,9 +9,6 @@ import letter from './../asset/letter_tr.png'
 const Form = () => {
 
     const [wr_name, setName] = useState("");
-    const [gender, setGender] = useState("");
-    const [age, setAge] = useState("");
-    const [location, setLocation] = useState("");
     const [number, setNumber] = useState("");
     const [disabled, setDisabled] = useState(false);
 
@@ -56,16 +53,16 @@ const Form = () => {
                 <div id="img"></div>
                 <div id="form-group" className="m-auto">
                     <div className="sm-wrap">
-                        <label for="name" className="nametag me-10">이름</label>
+                        <label htmlFor="name" className="nametag me-10">이름</label>
                         <input type="text" name="name" placeholder="김○○" value={wr_name} onChange={handleChange} />
                     </div>
                     <div className="sm-wrap d-flex">
-                        <label id="gendername" for="sex" className="nametag me-10">성별</label><span className="sm-block"></span>
-                        <input type="radio" name="gender" value="woman" id="woman"/><label for="woman"><span className="womantag me-4">&nbsp;여성</span> </label>
-                        <input type="radio" name="gender" value="man" id="man"/><label for="man">&nbsp;<span>남성</span></label> 
+                        <label id="gendername" htmlFor="sex" className="nametag me-10">성별</label><span className="sm-block"></span>
+                        <input type="radio" name="gender" value="woman" id="woman"/><label htmlFor="woman"><span className="womantag me-4">&nbsp;여성</span> </label>
+                        <input type="radio" name="gender" value="man" id="man"/><label htmlFor="man">&nbsp;<span>남성</span></label> 
                     </div>
                     <div className="sm-wrap">
-                        <label for="age" className="nametag me-10">나이&nbsp;<span className="text-danger s-middle">*</span></label>
+                        <label htmlFor="age" className="nametag me-10">나이&nbsp;<span className="text-danger s-middle">*</span></label>
                         <select name="age" id="age-group" required>
                             <option value="null">--선택--</option>
                             <option value="10" >10대</option>
@@ -76,9 +73,9 @@ const Form = () => {
                         </select>
                     </div>
                     <div className="sm-wrap">
-                        <label for="location" className="nametag me-10">거주지역</label>
-                        <select name="location" id="age-group">
-                            <option value="null" selected>--선택--</option>
+                        <label htmlFor="location" className="nametag me-10">거주지역</label>
+                        <select defaultValue="null" name="location" id="age-group">
+                            <option value="null">--선택--</option>
                             <option value="서울">서울</option>
                             <option value="경기도">경기</option>
                             <option value="인천">인천</option>
@@ -97,18 +94,18 @@ const Form = () => {
                         </select>
                     </div>
                     <div className="sm-wrap">
-                        <label for="number" className="nametag me-10">연락처&nbsp;<span className="text-danger s-middle">*</span></label>
+                        <label htmlFor="number" className="nametag me-10">연락처&nbsp;<span className="text-danger s-middle">*</span></label>
                         <input type="text" name="number" className="mb-2" placeholder="카카오톡 ID를 입력해주세요" onChange={numberChange} required/>
                     </div>
                     <ul id="label2" className="mx-0">
                             <li className="mx-0 mb-3">
                                 <input type="checkbox" id="agree1"/>
-                                <label for="agree1" className="d-md-flex align-items-center">&nbsp;<span>개인정보 취급방침에 동의합니다.</span>
+                                <label htmlFor="agree1" className="d-md-flex align-items-center">&nbsp;<span>개인정보 취급방침에 동의합니다.</span>
                                 <a href="#" className="d-flex justify-content-center">&nbsp;<span className="sm-block"></span><p className="agree-btn">[약관보기]</p></a></label>
                             </li>
                             <li className="mx-0 mb-5">
                                 <input type="checkbox" id="agree2"/>
-                                <label for="agree2" className="d-md-flex align-items-center">&nbsp;<span>Recozy 카카오톡 채널 추가에 동의합니다.</span><a href="#" className="d-flex justify-content-center">&nbsp;<span className="sm-block"></span><p className="agree-btn">[필수]</p></a></label>
+                                <label htmlFor="agree2" className="d-md-flex align-items-center">&nbsp;<span>Recozy 카카오톡 채널 추가에 동의합니다.</span><a href="#" className="d-flex justify-content-center">&nbsp;<span className="sm-block"></span><p className="agree-btn">[필수]</p></a></label>
                             </li>
                     </ul>
                     <button id="sm-btn" className="d-block mx-auto mb-4" type="submit" onClick={agree} disabled={disabled} >응답제출</button>

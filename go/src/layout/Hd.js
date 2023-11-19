@@ -61,14 +61,14 @@ const Hd = (props) => {
               <img src={logo} alt="로고" />
             </a>
           </h1>
-          <button id='listbtn' onClick={ () => { setOpen(!openmobile) } } className={ openmobile ? "open" : ""} ><i class="bi bi-list"></i></button>
+          <button id='listbtn' onClick={ () => { setOpen(!openmobile) } } className={ openmobile ? "open" : ""} ><i className="bi bi-list"></i></button>
          
    
        
           <div id="gnb" className={``}>
           <Scrollspy
           items={scrollspyItems}
-          currentClassName="active" // Customize the class name for the active item
+          currentClassName="active" 
           offset={-100}
           scrollDuration={500}
           className={`d-flex justify-content-center mb-0`}
@@ -77,7 +77,7 @@ const Hd = (props) => {
             {nav.gnb.map((x, i) => (
               <li
                 key={i}
-                className={`${x.cls}`}
+                className={`${x.cls} ${activeIndex === i ? 'active-menu' : ''}`}
                 onClick={() => handleGnbClick(i)}
               >
                 <a href={'#'+x.href}>{x.titlename}</a>
@@ -85,18 +85,6 @@ const Hd = (props) => {
             ))}
             </Scrollspy>
           </div>
-          
-          {/* <ul id="clickgnb" className={`d-flex justify-content-center`}>
-            {nav.gnb.map((x, i) => (
-              <li
-                key={i}
-                className={`${activeIndex === i ? 'active' : ''} ${x.cls}`}
-                onClick={() => handleGnbClick(i)}
-              >
-                <a href={x.href}>{x.name}</a>
-              </li>
-            ))}
-          </ul> */}
         </div>
       </header>
     </div>

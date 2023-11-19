@@ -29,7 +29,7 @@ const Event = (props) => {
                         {
                         eventdb.Event.map((v, idx)=>{
                             return(
-                                <SwiperSlide>
+                                <SwiperSlide key={idx}>
                                     <div className={`e_bg${idx + 1} w-100 d-flex flex-column flex-lg-row align-items-center justify-content-between`}>
                                         <img src={v.inimg} alt="슬라이드 이미지1" className='imgs img-fluid order-1' />
                                         <ul className='order-0'>
@@ -46,18 +46,18 @@ const Event = (props) => {
                                                         {
                                             eventdb.icons.map((v,idx)=>{
                                                 return(
-                                                    <div class="snsicon">
+                                                    <div key={idx} className="snsicon">
                                                         <a href={v.href1} className='ytb-a rel' target='_blank'>
-                                                            <div class="i-info1 text-center">
-                                                                <span className='ccls1'>{v.content11}</span><span class="d-block">{v.content12}</span>
+                                                            <div className="i-info1 text-center">
+                                                                <span className='ccls1'>{v.content11}</span><span className="d-block">{v.content12}</span>
                                                             </div>
-                                                            <img src={v.img1} class={v.cls1} alt={v.alt1} />
+                                                            <img src={v.img1} className={v.cls1} alt={v.alt1} />
                                                         </a>
                                                         <a href={v.href2} className='ins-a rel' target='_blank'>
-                                                            <div class="i-info2 text-center">
-                                                                <span className='ccls2'>{v.content21}</span><span class="d-block">{v.content22}</span>
+                                                            <div className="i-info2 text-center">
+                                                                <span className='ccls2'>{v.content21}</span><span className="d-block">{v.content22}</span>
                                                             </div>
-                                                            <img src={v.img2} class={v.cls2} alt={v.alt2} />
+                                                            <img src={v.img2} className={v.cls2} alt={v.alt2} />
                                                         </a>
                                                     </div>
                                                 )
